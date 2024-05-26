@@ -28,6 +28,10 @@
 	<link id="ekka-css" href="{{ asset('backend/css/bootstrap.min.css') }}" rel="stylesheet" />
     {{-- <link rel="stylesheet" href="{{asset('backend/css/select2.css')}}"> --}}
 
+    {{-- summer note --}}
+	{{-- <link href='{{ asset('backend/css/summernote-lite.css') }}' rel='stylesheet'> --}}
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+
     {{-- calander --}}
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
@@ -115,6 +119,10 @@
     {{-- <script src="{{ asset('backend/js/select2.js') }}')}}"></script> --}}
 	<script src="{{ asset('backend') }}/plugins/slick/slick.min.js"></script>
 
+    {{-- summber note --}}
+	{{-- <script src="{{ asset('backend/js/summernote-lite.js') }}"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
     {{-- calander --}}
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
@@ -159,6 +167,14 @@
                 reader.readAsDataURL(input.files[0]);
             }
         }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#summernote').summernote({
+                height: 400
+            });
+
+        });
     </script>
 
 @yield('footer_scripts')

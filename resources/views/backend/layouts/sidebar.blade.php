@@ -2,7 +2,7 @@
     <div id="sidebar" class="sidebar ec-sidebar-footer">
 
         <div class="">
-            <a href="{{ route('dashboard') }}" title="">
+            <a href="{{ url('/') }}" target="_blank">
                 @if($setting->first()->black_logo != null)
                     <img src="{{ asset('uploads/setting') }}/{{ $setting->first()->black_logo }}" class="ec-brand-icon" width="180px" alt="Logo">
                 @else
@@ -202,14 +202,19 @@
                     <div class="collapse">
                         <ul class="sub-menu" id="vendors" data-parent="#sidebar-menu">
                             <li class="">
-                                <a class="sidenav-item-link" href="{{ route('commingsoon') }}">
+                                <a class="sidenav-item-link" href="{{ route('about.index') }}">
                                     <span class="nav-text">About Us</span>
                                 </a>
                             </li>
 
                             <li class="">
-                                <a class="sidenav-item-link" href="{{ route('commingsoon') }}">
+                                <a class="sidenav-item-link" href="{{ route('privacypolicy.index') }}">
                                     <span class="nav-text">Privaci policy</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="sidenav-item-link" href="{{ route('termandcondition.index') }}">
+                                    <span class="nav-text">Terms & Condition</span>
                                 </a>
                             </li>
                         </ul>

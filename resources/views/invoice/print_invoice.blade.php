@@ -80,7 +80,7 @@
                                     <td>{{ $order->rel_to_pro->name }}</td>
                                     <td>
                                         @if ($order->rel_to_attribute->weight)
-                                            <span style="">Weight:{{ $order->rel_to_attribute->weight }}, </span>
+                                            <span style="">Package:{{ $order->rel_to_attribute->weight }}, </span>
                                         @else
                                             <span style="">Color:{{ $order->rel_to_attribute->color_id }} <span>, Size:{{ $order->rel_to_attribute->size_id }}, </span></span>
                                         @endif

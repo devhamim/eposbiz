@@ -29,6 +29,10 @@
     
 
     
+	
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+
+    
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
     <!-- Data Tables -->
@@ -116,6 +120,10 @@
 	<script src="<?php echo e(asset('backend')); ?>/plugins/slick/slick.min.js"></script>
 
     
+	
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+    
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
@@ -159,6 +167,14 @@
                 reader.readAsDataURL(input.files[0]);
             }
         }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#summernote').summernote({
+                height: 400
+            });
+
+        });
     </script>
 
 <?php echo $__env->yieldContent('footer_scripts'); ?>

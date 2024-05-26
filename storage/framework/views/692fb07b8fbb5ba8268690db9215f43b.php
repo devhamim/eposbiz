@@ -2,7 +2,7 @@
     <div id="sidebar" class="sidebar ec-sidebar-footer">
 
         <div class="">
-            <a href="<?php echo e(route('dashboard')); ?>" title="">
+            <a href="<?php echo e(url('/')); ?>" target="_blank">
                 <?php if($setting->first()->black_logo != null): ?>
                     <img src="<?php echo e(asset('uploads/setting')); ?>/<?php echo e($setting->first()->black_logo); ?>" class="ec-brand-icon" width="180px" alt="Logo">
                 <?php else: ?>
@@ -202,14 +202,19 @@
                     <div class="collapse">
                         <ul class="sub-menu" id="vendors" data-parent="#sidebar-menu">
                             <li class="">
-                                <a class="sidenav-item-link" href="<?php echo e(route('commingsoon')); ?>">
+                                <a class="sidenav-item-link" href="<?php echo e(route('about.index')); ?>">
                                     <span class="nav-text">About Us</span>
                                 </a>
                             </li>
 
                             <li class="">
-                                <a class="sidenav-item-link" href="<?php echo e(route('commingsoon')); ?>">
+                                <a class="sidenav-item-link" href="<?php echo e(route('privacypolicy.index')); ?>">
                                     <span class="nav-text">Privaci policy</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="sidenav-item-link" href="<?php echo e(route('termandcondition.index')); ?>">
+                                    <span class="nav-text">Terms & Condition</span>
                                 </a>
                             </li>
                         </ul>

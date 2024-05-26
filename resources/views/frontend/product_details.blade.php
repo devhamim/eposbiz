@@ -117,7 +117,7 @@
                                         @endphp
                                         @if ($inventorie->rel_to_attribute->where('weight', '!=', null)->isNotEmpty())
                                             <div class="details-filter-row details-row-size">
-                                                <label>Weight:</label>
+                                                <label>Package:</label>
                                                 <div class="product-nav product-nav-thumbs product_details_weight">
                                                     @foreach ($inventorie->rel_to_attribute as $attribute)
                                                         <input type="radio" id="weight_details_{{ $attribute->id }}" class="px-2 weight-option inpute_weight" name="attribute_id" value="{{ $attribute->id }}"  required>
@@ -204,7 +204,7 @@
                                     </div>
                                     @if ($products->first()->weight != null)
                                         <div class="details-filter-row details-row-size">
-                                            <label>Weight:</label>
+                                            <label>Package:</label>
                                             <div class="product-nav product-nav-thumbs product_details_weight">
                                                 @foreach ($products as $product)
                                                     <input type="radio" id="weight_details_{{ $product->id }}" class="px-2 weight-option inpute_weight" name="attribute_id" value="{{ $product->id }}"  required>

@@ -251,7 +251,7 @@
             <td class="no">{{ $sl+1 }}</td>
             <td class="desc"><h3>{{ $order->rel_to_pro->name }}</h3>{{ $order->rel_to_pro->categry_id }}
                 @if ($order->rel_to_attribute->weight)
-                    <h5 style="">Weight:{{ $order->rel_to_attribute->weight }}</h5>
+                    <h5 style="">Package:{{ $order->rel_to_attribute->weight }}</h5>
                 @else
                     <h5 style="">Color:{{ $order->rel_to_attribute->color_id }} <span>, Size:{{ $order->rel_to_attribute->size_id }}</span></h5>
                 @endif

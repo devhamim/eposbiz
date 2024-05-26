@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AttributeController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BannerController;
@@ -14,12 +15,14 @@ use App\Http\Controllers\MarkatingController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\POSController;
 use App\Http\Controllers\PrintController;
+use App\Http\Controllers\PrivacyPolicyController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\SMSController;
 use App\Http\Controllers\SubcategoryController;
+use App\Http\Controllers\TermAndConditionController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -55,6 +58,12 @@ Route::post('/multi/view/invoice', [PrintController::class, 'multi_view_invoice'
 
 Route::post('/multi/order/status', [PrintController::class, 'multi_order_status'])->name('multi.order.status');
 
+// addtional page
+Route::get('/aboutus', [FrontendController::class, 'about_us'])->name('about.us');
+Route::get('/privacy/policy', [FrontendController::class, 'privacy_policy'])->name('privacy.policy');
+Route::get('/terms/condition', [FrontendController::class, 'terms_condition'])->name('terms.condition');
+
+
 // login
 Route::group(['prefix' => 'admin'], function(){
     // login route
@@ -82,6 +91,10 @@ Route::group(['prefix' => 'admin'], function(){
     Route::resource('review', ReviewController::class);
     Route::resource('delevarycharge', DelevaryChargeController::class);
     Route::resource('pos', POSController::class);
+    // addtional page
+    Route::resource('about', AboutController::class);
+    Route::resource('privacypolicy', PrivacyPolicyController::class);
+    Route::resource('termandcondition', TermAndConditionController::class);
 
     Route::get('size/list', [AttributeController::class, 'size_list'])->name('size.list');
     Route::post('/getsubcategory', [ProductController::class, 'getsubcategory']);

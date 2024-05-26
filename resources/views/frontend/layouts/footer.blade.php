@@ -37,10 +37,10 @@
                         <h4 class="widget-title">Related Page</h4>
 
                         <ul class="widget-list">
-                            <li><a href="">Refund & returned</a></li>
-                            <li><a href="">About us</a></li>
-                            <li><a href="">Privacy policy</a></li>
-                            <li><a href="">Terms & Condition</a></li>
+                            {{-- <li><a href="">Refund & returned</a></li> --}}
+                            <li><a href="{{ route('about.us') }}">About us</a></li>
+                            <li><a href="{{ route('privacy.policy') }}">Privacy policy</a></li>
+                            <li><a href="{{ route('terms.condition') }}">Terms & Condition</a></li>
                             <li><a href="">Our showrooms</a></li>
                         </ul>
                     </div>

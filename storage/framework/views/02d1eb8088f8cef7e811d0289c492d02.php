@@ -259,8 +259,6 @@ unset($__errorArgs, $__bag); ?>
 <?php $__env->startSection('footer_scripts'); ?>
 
 
-
-
 <script>
     $(document).ready(function () {
         $('#product').on('change', function () {
@@ -312,7 +310,10 @@ unset($__errorArgs, $__bag); ?>
                             '</select>';
                     } else {
                         newRowHtml += '<input type="text" class="form-control" value="N/A" readonly>' +
-                            '<input type="hidden" name="attribute_id[]" value="' + (data.attribute_id ? data.attribute_id : '') + '">'
+                            '<input type="hidden" name="attribute_id[]" value="">' +
+                            '<input type="hidden" name="price[]" value="">' +
+                            '<input type="hidden" name="quantity[]" value="">' +
+                            '<span class="text-danger">Out of stock</span>';
                     }
 
                     newRowHtml += '</td>' +
@@ -404,6 +405,8 @@ unset($__errorArgs, $__bag); ?>
                 }
             });
         });
+
+
 
     $('#district').change(function() {
         var district = $(this).val();

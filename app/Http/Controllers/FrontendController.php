@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\about;
 use App\Models\Attribute;
 use App\Models\Banner;
 use App\Models\Category;
-use App\Models\Inventory;
+use App\Models\PrivacyPolicy;
 use App\Models\Product;
 use App\Models\Review;
+use App\Models\TermandCondition;
 use Illuminate\Http\Request;
-use Log;
 
 class FrontendController extends Controller
 {
@@ -97,7 +98,6 @@ class FrontendController extends Controller
         ]);
     }
 
-    // shop
       //shop
       function shop(Request $request){
         // search
@@ -128,5 +128,29 @@ class FrontendController extends Controller
            'products_count'=>$products_count,
        ]);
    }
+
+    //about_us
+    function about_us(){
+        $abouts = about::where('status', 1)->first();
+        return view('frontend.about',[
+            'abouts'=>$abouts,
+        ]);
+    }
+
+    //privacy_policy
+    function privacy_policy(){
+        $privacypolicy = PrivacyPolicy::first();
+        return view('frontend.privacy_policy',[
+            'privacypolicy'=>$privacypolicy,
+        ]);
+    }
+
+    //terms_condition
+    function terms_condition(){
+        $termscondition = TermandCondition::first();
+        return view('frontend.termandcondition',[
+            'termscondition'=>$termscondition,
+        ]);
+    }
 
 }
