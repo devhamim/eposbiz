@@ -11,6 +11,7 @@ use App\Models\OrderProduct;
 use App\Models\Product;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Log;
 
 class POSController extends Controller
 {
@@ -139,63 +140,74 @@ class POSController extends Controller
 
     // getProduct
     public function getProduct(Request $request) {
-        $productId = $request->input('product_id');
-        if (!$productId) {
-            return response()->json(['error' => 'No product ID provided.']);
+        try {
+            $productId = $request->input('product_id');
+            if (!$productId) {
+                return response()->json(['error' => 'No product ID provided.'], 400);
+            }
+
+            $product = Product::find($productId);
+            if (!$product) {
+                return response()->json(['error' => 'Product not found.'], 404);
+            }
+
+            $inventory = Inventory::where('id', $product->inventorie_id)->with('rel_to_attribute')->first();
+            if (!$inventory) {
+                return response()->json(['error' => 'Inventory not found for the product.'], 404);
+            }
+
+            $attributes = Attribute::where('inventorie_id', $inventory->id)
+                ->with(['rel_to_color', 'rel_to_size'])
+                ->get();
+
+            // Fallback for attributes without color, size, or weight
+            if ($attributes->isEmpty()) {
+                $attributes = Attribute::where('inventorie_id', $inventory->id)->first();
+            }
+
+            $data = [
+                'product_id' => $product->id,
+                'productName' => $product->name,
+                'inventory_id' => $inventory->id,
+                'attribute' => $attributes,
+            ];
+
+            return response()->json($data);
+        } catch (\Exception $e) {
+            \Log::error('Error fetching product details: ' . $e->getMessage());
+            return response()->json(['error' => 'An error occurred while fetching product details.'], 500);
         }
-
-        $product = Product::find($productId);
-        if (!$product) {
-            return response()->json(['error' => 'Product not found.']);
-        }
-
-        $inventory = Inventory::where('id', $product->inventorie_id)->with('rel_to_attribute')->first();
-        if (!$inventory) {
-            return response()->json(['error' => 'Inventory not found for the product.']);
-        }
-
-        $attributes = Attribute::where('inventorie_id', $inventory->id)
-            ->with(['rel_to_color', 'rel_to_size'])
-            ->get();
-
-        // Fallback for attributes without color, size, or weight
-        if ($attributes->isEmpty()) {
-            $attributes = Attribute::where('inventorie_id', $inventory->id)->first();
-        }
-
-        $data = [
-            'product_id' => $product->id,
-            'productName' => $product->name,
-            'inventory_id' => $inventory->id,
-            'attribute' => $attributes,
-        ];
-
-        return response()->json($data);
     }
 
     public function getAttributeDetails(Request $request) {
-        $attributeId = $request->input('attribute_id');
+        try {
+            $attributeId = $request->input('attribute_id');
 
-        if (!$attributeId) {
-            return response()->json(['error' => 'Attribute ID is required.']);
+            if (!$attributeId) {
+                return response()->json(['error' => 'Attribute ID is required.'], 400);
+            }
+
+            $attribute = Attribute::find($attributeId);
+
+            if (!$attribute) {
+                return response()->json(['error' => 'Attribute not found.'], 404);
+            }
+
+            $data = [
+                'attribute_id' => $attribute->id,
+                'inventory_id' => $attribute->inventory_id,
+                'price' => $attribute->sell_price ? $attribute->sell_price : $attribute->price,
+                'quantity' => $attribute->quantity,
+                'weight' => $attribute->weight ?? null,
+            ];
+
+            return response()->json($data);
+        } catch (\Exception $e) {
+            \Log::error('Error fetching attribute details: ' . $e->getMessage());
+            return response()->json(['error' => 'An error occurred while fetching attribute details.'], 500);
         }
-
-        $attribute = Attribute::find($attributeId);
-
-        if (!$attribute) {
-            return response()->json(['error' => 'Attribute not found.']);
-        }
-
-        $data = [
-            'attribute_id' => $attribute->id,
-            'inventory_id' => $attribute->inventory_id,
-            'price' => $attribute->sell_price ? $attribute->sell_price : $attribute->price,
-            'quantity' => $attribute->quantity,
-            'weight' => $attribute->weight ?? null,
-        ];
-
-        return response()->json($data);
     }
+
 
 
 
