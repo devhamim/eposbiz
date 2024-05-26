@@ -27,7 +27,7 @@
                                     <th>Subcategory</th>
                                     <th>Color</th>
                                     <th>Size</th>
-                                    <th>Weight</th>
+                                    <th>Package</th>
                                     <th>Brand</th>
                                     <th>Quantity</th>
                                     <th>Price</th>
