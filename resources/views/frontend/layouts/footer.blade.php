@@ -41,7 +41,7 @@
                             <li><a href="{{ route('about.us') }}">About us</a></li>
                             <li><a href="{{ route('privacy.policy') }}">Privacy policy</a></li>
                             <li><a href="{{ route('terms.condition') }}">Terms & Condition</a></li>
-                            <li><a href="">Our showrooms</a></li>
+                            {{-- <li><a href="">Our showrooms</a></li> --}}
                         </ul>
                     </div>
                 </div>
