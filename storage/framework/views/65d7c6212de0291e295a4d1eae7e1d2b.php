@@ -18,6 +18,9 @@
                                 <?php endif; ?>
                             </ul>
                         </div>
+                        <div class="powerdby d-flex">
+                            <span class="mr-2">powered by:</span> <a href=""><img width="150px" src="<?php echo e(asset('frontend/assets/NIT-EBIZ-logo.png')); ?>" alt=""></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-lg-4">
@@ -41,7 +44,7 @@
                             <li><a href="<?php echo e(route('about.us')); ?>">About us</a></li>
                             <li><a href="<?php echo e(route('privacy.policy')); ?>">Privacy policy</a></li>
                             <li><a href="<?php echo e(route('terms.condition')); ?>">Terms & Condition</a></li>
-                            <li><a href="">Our showrooms</a></li>
+                            
                         </ul>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 @section('content')
-<div class="container page-content">
+<div class="container">
     <div class="border-bottom mb-4">
         <div class="breadcrumbs row align-items-center justify-content-between d-none d-md-flex">
             <div class="col-12">

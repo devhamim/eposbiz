@@ -18,6 +18,9 @@
                                 @endif
                             </ul>
                         </div>
+                        <div class="powerdby d-flex">
+                            <span class="mr-2">powered by:</span> <a href="https://nitebiz.com/"><img width="150px" src="{{ asset('frontend/assets/NIT-EBIZ-logo.png') }}" alt=""></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-lg-4">
