@@ -24,7 +24,7 @@
                     <a ><img width="350px" src="{{ asset('uploads/setting') }}/{{ $setting->first()->white_logo }}"></a>
                 </div>
                 <div class="right-invoice">
-                    <h5 class="text-25 mb-0 mt-0 text-white">Marhaba Shop</h5>
+                    <h5 class="text-25 mb-0 mt-0 text-white">{{ $setting->first()->name }}</h5>
                     <span class="status d-block text-capitalize text-white"><strong>#{{ $orders->order_id }}</strong></span>
                     {{-- <span class="status d-block text-capitalize text-white"><strong>Marchent id: </strong> 284635</span> --}}
                     <div class="shape"></div>

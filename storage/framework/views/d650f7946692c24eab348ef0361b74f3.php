@@ -24,7 +24,7 @@
                     <a ><img width="350px" src="<?php echo e(asset('uploads/setting')); ?>/<?php echo e($setting->first()->white_logo); ?>"></a>
                 </div>
                 <div class="right-invoice">
-                    <h5 class="text-25 mb-0 mt-0 text-white">Marhaba Shop</h5>
+                    <h5 class="text-25 mb-0 mt-0 text-white"><?php echo e($setting->first()->name); ?></h5>
                     <span class="status d-block text-capitalize text-white"><strong>#<?php echo e($orders->order_id); ?></strong></span>
                     
                     <div class="shape"></div>

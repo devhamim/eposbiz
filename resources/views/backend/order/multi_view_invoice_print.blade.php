@@ -28,7 +28,7 @@
                     <div class="tm_invoice_head tm_top_head tm_mb15 tm_align_center" style="margin-top: 30px">
                         <div class="tm_invoice_left">
                             <div class="tm_logo">
-                                <strong>MARHABA SHOP BD</strong><br>
+                                <strong>{{ $setting->first()->name }}</strong><br>
                                 <span>#{{ $order->order_id }}</span>
                                 {{-- @if($setting->first()->black_logo != null)
                                     <img src="{{ asset('uploads/setting') }}/{{ $setting->first()->black_logo }}" width="180px" alt="Logo">
