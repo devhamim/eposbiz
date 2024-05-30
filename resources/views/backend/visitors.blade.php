@@ -44,13 +44,7 @@
                                                     <span class="sr-only">Info</span>
                                                 </button>
                                                 <div class="dropdown-menu">
-                                                    <form action="{{ route('banner.destroy',  $visitor->id) }}" method="POST">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="submit" class="dropdown-item" onclick="return confirm('Are you sure you want to delete this item?')">
-                                                            Delete
-                                                        </button>
-                                                    </form>
+                                                    <a href="{{ route('visitors.destroy',  $visitor->id) }}" class="dropdown-item"  onclick="return confirm('Are you sure you want to delete this item?')">Delete</a>
                                                 </div>
                                             </div>
                                         </td>

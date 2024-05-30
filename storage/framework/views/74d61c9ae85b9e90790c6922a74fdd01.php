@@ -43,13 +43,7 @@
                                                     <span class="sr-only">Info</span>
                                                 </button>
                                                 <div class="dropdown-menu">
-                                                    <form action="<?php echo e(route('banner.destroy',  $visitor->id)); ?>" method="POST">
-                                                        <?php echo csrf_field(); ?>
-                                                        <?php echo method_field('DELETE'); ?>
-                                                        <button type="submit" class="dropdown-item" onclick="return confirm('Are you sure you want to delete this item?')">
-                                                            Delete
-                                                        </button>
-                                                    </form>
+                                                    <a href="<?php echo e(route('visitors.destroy',  $visitor->id)); ?>" class="dropdown-item"  onclick="return confirm('Are you sure you want to delete this item?')">Delete</a>
                                                 </div>
                                             </div>
                                         </td>

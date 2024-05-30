@@ -66,6 +66,7 @@ Route::get('/terms/condition', [FrontendController::class, 'terms_condition'])->
 
 // visitor counter
 Route::get('/visitors', [VisitorController::class, 'visitors'])->name('visitors');
+Route::get('/visitors/destroy/{id}', [VisitorController::class, 'visitors_destroy'])->name('visitors.destroy');
 
 
 // login

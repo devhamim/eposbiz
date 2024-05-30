@@ -12,4 +12,10 @@ class VisitorController extends Controller
         $visitors = Visitor::all();
         return view('backend.visitors', compact('visitors'));
     }
+
+    // visitors_destroy
+    function visitors_destroy($id){
+        Visitor::find($id)->delete();
+        return back()->with('warning', 'Delete Successfully');
+    }
 }
