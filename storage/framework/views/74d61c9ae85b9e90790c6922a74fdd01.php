@@ -8,7 +8,44 @@
             </p>
         </div>
     </div>
-
+    <div class="row">
+        <div class="col-xl-3 col-sm-6 p-b-15 lbl-card">
+            <div class="card card-mini dash-card card-1">
+                <div class="card-body">
+                    <h2 class="mb-1"><?php echo e($visitorsCount); ?></h2>
+                    <p>Total User</p>
+                    <span class="mdi mdi-account-arrow-left"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 p-b-15 lbl-card">
+            <div class="card card-mini dash-card card-2">
+                <div class="card-body">
+                    <h2 class="mb-1"></h2>
+                    <p>Total Products</p>
+                    <span class="mdi mdi-account-clock"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 p-b-15 lbl-card">
+            <div class="card card-mini dash-card card-3">
+                <div class="card-body">
+                    <h2 class="mb-1"></h2>
+                    <p>Total Order</p>
+                    <span class="mdi mdi-package-variant"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 p-b-15 lbl-card">
+            <div class="card card-mini dash-card card-4">
+                <div class="card-body">
+                    <h2 class="mb-1"> Tk</h2>
+                    <p>Revenue</p>
+                    <span class="mdi mdi-currency-usd"></span>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-12">
             <div class="ec-vendor-list card card-default">
@@ -18,7 +55,7 @@
                             <thead>
                                 <tr>
                                     <th>IP Address</th>
-                                    <th>countryName</th>
+                                    <th>CountryCode</th>
                                     <th>City</th>
                                     <th>Timestamp</th>
                                     <th>Action</th>
@@ -29,7 +66,7 @@
                                 <?php $__currentLoopData = $visitors; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $visitor): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                     <tr>
                                         <td><?php echo e($visitor->ip); ?></td>
-                                        <td><?php echo e($visitor->countryName); ?></td>
+                                        <td><?php echo e($visitor->country); ?></td>
                                         <td><?php echo e($visitor->city); ?></td>
                                         <td><?php echo e($visitor->created_at); ?></td>
                                         <td>
