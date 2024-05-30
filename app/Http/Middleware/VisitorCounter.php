@@ -28,12 +28,12 @@ class VisitorCounter
         Log::info('Raw Location Data: ', (array)$location);
 
         // Use fallback values if location data is not available
-        $country = $location ? ($location->countryName ?? 'Unknown') : 'Unknown';
+        $country = $location ? ($location->countryCode ?? 'Unknown') : 'Unknown';
         $city = $location ? ($location->cityName ?? 'Unknown') : 'Unknown';
 
         Visitor::create([
             'ip' => $ip,
-            'country' => $countryCode,
+            'country' => $country,
             'city' => $city,
         ]);
 
