@@ -10,7 +10,7 @@ class VisitorController extends Controller
 {
     public function visitors()
     {
-        $visitors = Visitor::orderBy('created_at', 'desc')->get();
+        $visitors = Visitor::orderBy('id', 'desc')->get();
         $visitorsCount = Visitor::count();
         $mostVisitedCity = Visitor::select('city', \DB::raw('count(*) as count'))
         ->groupBy('city')
