@@ -24,6 +24,7 @@ use App\Http\Controllers\SMSController;
 use App\Http\Controllers\SubcategoryController;
 use App\Http\Controllers\TermAndConditionController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\VisitorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -62,6 +63,9 @@ Route::post('/multi/order/status', [PrintController::class, 'multi_order_status'
 Route::get('/aboutus', [FrontendController::class, 'about_us'])->name('about.us');
 Route::get('/privacy/policy', [FrontendController::class, 'privacy_policy'])->name('privacy.policy');
 Route::get('/terms/condition', [FrontendController::class, 'terms_condition'])->name('terms.condition');
+
+// visitor counter
+Route::get('/visitors', [VisitorController::class, 'visitors'])->name('visitors');
 
 
 // login
