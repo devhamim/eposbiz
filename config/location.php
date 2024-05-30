@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'driver' => Stevebauman\Location\Drivers\IpApi::class,
+    'driver' => Stevebauman\Location\Drivers\IpInfo::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -27,9 +27,26 @@ return [
 
     'fallbacks' => [
         Stevebauman\Location\Drivers\Ip2locationio::class,
-        Stevebauman\Location\Drivers\IpInfo::class,
+        Stevebauman\Location\Drivers\IpApi::class,
         Stevebauman\Location\Drivers\GeoPlugin::class,
         Stevebauman\Location\Drivers\MaxMind::class,
+    ],
+
+    'position' => [
+        'default' => [
+            'countryCode' => 'BD',
+            'countryName' => 'Bangladesh',
+            'regionCode' => '13',
+            'regionName' => 'Dhaka',
+            'cityName' => 'Dhaka',
+            'zipCode' => '1000',
+            'isoCode' => 'BD-DH',
+            'postalCode' => '1000',
+            'latitude' => 23.8103,
+            'longitude' => 90.4125,
+            'metroCode' => null,
+            'areaCode' => null,
+        ],
     ],
 
     /*
