@@ -138,7 +138,7 @@
                 <!-- Landing Page list -->
                 <li>
                     <a class="sidenav-item-link" href="<?php echo e(route('commingsoon')); ?>">
-                        <i class="mdi mdi-account-group"></i>
+                        <i class="mdi mdi-forklift"></i>
                         <span class="nav-text">Landing Page</span>
                     </a>
                 </li>

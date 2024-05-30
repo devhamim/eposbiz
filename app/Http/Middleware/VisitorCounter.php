@@ -26,11 +26,17 @@ class VisitorCounter
             $ip = $request->header('CF-Connecting-IP');
         }
 
+        // Handle multiple IPs from the 'X-Forwarded-For' header
+        if (strpos($ip, ',') !== false) {
+            $ip = trim(explode(',', $ip)[0]);
+        }
+
         $existingVisitor = Visitor::where('ip', $ip)
             ->where('created_at', '>=', Carbon::now()->subDay())
             ->first();
 
         if (!$existingVisitor) {
+            // Handle localhost IPs
             if ($ip == '127.0.0.1' || $ip == '::1') {
                 $location = (object)[
                     'countryName' => 'Localhost',
@@ -40,6 +46,7 @@ class VisitorCounter
                 $location = Location::get($ip);
             }
 
+            // Fallback to default location if location data is not available
             if (!$location) {
                 $location = (object)[
                     'countryName' => config('location.position.default.countryName'),
@@ -47,6 +54,7 @@ class VisitorCounter
                 ];
             }
 
+            // Log the IP and location data for debugging
             Log::info('Visitor IP: ' . $ip);
             Log::info('Location Data: ', (array)$location);
 
