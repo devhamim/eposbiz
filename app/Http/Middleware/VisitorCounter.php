@@ -26,9 +26,9 @@ class VisitorCounter
             $ip = $request->header('CF-Connecting-IP');
         }
 
-        $existingVisitor = Visitor::where('ip', $ip)
-            ->where('created_at', '>=', Carbon::now()->subDay())
-            ->first();
+        // $existingVisitor = Visitor::where('ip', $ip)
+        //     ->where('created_at', '>=', Carbon::now()->subDay())
+        //     ->first();
 
         if (!$existingVisitor) {
             if ($ip == '127.0.0.1' || $ip == '::1') {
