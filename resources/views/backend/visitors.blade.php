@@ -19,7 +19,7 @@
                             <thead>
                                 <tr>
                                     <th>IP Address</th>
-                                    <th>Country</th>
+                                    <th>RegionName</th>
                                     <th>City</th>
                                     <th>Timestamp</th>
                                     <th>Action</th>
@@ -30,7 +30,7 @@
                                 @foreach ($visitors as $visitor)
                                     <tr>
                                         <td>{{ $visitor->ip }}</td>
-                                        <td>{{ $visitor->country }}</td>
+                                        <td>{{ $visitor->regionName }}</td>
                                         <td>{{ $visitor->city }}</td>
                                         <td>{{ $visitor->created_at }}</td>
                                         <td>

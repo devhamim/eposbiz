@@ -60,7 +60,7 @@ class VisitorCounter
 
             Visitor::create([
                 'ip' => $ip,
-                'country' => $location->countryName,
+                'country' => $location->regionName,
                 'city' => $location->cityName,
             ]);
         }
