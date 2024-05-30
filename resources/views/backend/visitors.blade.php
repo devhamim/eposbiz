@@ -30,7 +30,7 @@
                                 @foreach ($visitors as $visitor)
                                     <tr>
                                         <td>{{ $visitor->ip }}</td>
-                                        <td>{{ $visitor->countryCode }}</td>
+                                        <td>{{ $visitor->country }}</td>
                                         <td>{{ $visitor->city }}</td>
                                         <td>{{ $visitor->created_at }}</td>
                                         <td>
