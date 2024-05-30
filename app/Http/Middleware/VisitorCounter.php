@@ -19,7 +19,38 @@ class VisitorCounter
      */
     public function handle(Request $request, Closure $next): Response
     {
+
+        $ip = $this->getIpAddress($request);
+        $location = Location::get($ip);
+
+        // Log the raw location data for debugging
+        Log::info('Visitor IP: ' . $ip);
+        Log::info('Raw Location Data: ', (array)$location);
+
+        // Use fallback values if location data is not available
+        $country = $location ? ($location->countryName ?? 'Unknown') : 'Unknown';
+        $city = $location ? ($location->cityName ?? 'Unknown') : 'Unknown';
+
+        Visitor::create([
+            'ip' => $ip,
+            'country' => $country,
+            'city' => $city,
+        ]);
+
+        return $next($request);
+
+    }
+
+    /**
+     * Get the client's IP address.
+     *
+     * @param \Illuminate\Http\Request $request
+     * @return string
+     */
+    protected function getIpAddress(Request $request): string
+    {
         $ip = $request->ip();
+
         if ($request->hasHeader('X-Forwarded-For')) {
             $ip = $request->header('X-Forwarded-For');
         } elseif ($request->hasHeader('CF-Connecting-IP')) {
@@ -31,40 +62,6 @@ class VisitorCounter
             $ip = trim(explode(',', $ip)[0]);
         }
 
-        $existingVisitor = Visitor::where('ip', $ip)
-            ->where('created_at', '>=', Carbon::now()->subDay())
-            ->first();
-
-        if (!$existingVisitor) {
-            // Handle localhost IPs
-            if ($ip == '127.0.0.1' || $ip == '::1') {
-                $location = (object)[
-                    'countryName' => 'Localhost',
-                    'cityName' => 'Localhost',
-                ];
-            } else {
-                $location = Location::get($ip);
-            }
-
-            // Fallback to default location if location data is not available
-            if (!$location) {
-                $location = (object)[
-                    'countryName' => config('location.position.default.countryName'),
-                    'cityName' => config('location.position.default.cityName'),
-                ];
-            }
-
-            // Log the IP and location data for debugging
-            Log::info('Visitor IP: ' . $ip);
-            Log::info('Location Data: ', (array)$location);
-
-            Visitor::create([
-                'ip' => $ip,
-                'country' => $location->regionName,
-                'city' => $location->cityName,
-            ]);
-        }
-
-        return $next($request);
+        return $ip;
     }
 }

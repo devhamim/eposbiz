@@ -18,7 +18,7 @@
                             <thead>
                                 <tr>
                                     <th>IP Address</th>
-                                    <th>Country</th>
+                                    <th>countryName</th>
                                     <th>City</th>
                                     <th>Timestamp</th>
                                     <th>Action</th>
@@ -29,7 +29,7 @@
                                 <?php $__currentLoopData = $visitors; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $visitor): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                     <tr>
                                         <td><?php echo e($visitor->ip); ?></td>
-                                        <td><?php echo e($visitor->country); ?></td>
+                                        <td><?php echo e($visitor->countryName); ?></td>
                                         <td><?php echo e($visitor->city); ?></td>
                                         <td><?php echo e($visitor->created_at); ?></td>
                                         <td>
