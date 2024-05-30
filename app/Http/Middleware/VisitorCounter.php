@@ -33,7 +33,7 @@ class VisitorCounter
 
         Visitor::create([
             'ip' => $ip,
-            'country' => $country,
+            'country' => $countryCode,
             'city' => $city,
         ]);
 
