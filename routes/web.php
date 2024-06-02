@@ -11,6 +11,7 @@ use App\Http\Controllers\DelevaryChargeController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\MarkatingController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\POSController;
@@ -96,6 +97,7 @@ Route::group(['prefix' => 'admin'], function(){
     Route::resource('review', ReviewController::class);
     Route::resource('delevarycharge', DelevaryChargeController::class);
     Route::resource('pos', POSController::class);
+    Route::resource('mails', MailController::class);
     // addtional page
     Route::resource('about', AboutController::class);
     Route::resource('privacypolicy', PrivacyPolicyController::class);

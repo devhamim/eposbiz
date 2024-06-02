@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\Email;
 use App\Models\Attribute;
 use App\Models\Billingdetails;
 use App\Models\DelevaryCharge;
+use App\Models\Mailinfo;
 use App\Models\Order;
 use App\Models\OrderProduct;
 use App\Models\Product;
@@ -15,6 +17,7 @@ use Illuminate\Support\Facades\Cookie;
 use Str;
 use Log;
 use Illuminate\Support\Facades\Http;
+use Mail;
 
 class CheckoutController extends Controller
 {
@@ -166,6 +169,12 @@ class CheckoutController extends Controller
 //         Log::error("SMSQ API Request failed. Response: " . $response->status());
 //         return back()->withErrors(['sms_error' => 'Failed to send SMS to customer.']);
 //     }
+$mailData = [
+    'title' => 'My have a order',
+    'body' => 'Someone order your website product. Please check the admin dashboard'
+];
+$mailData = Mailinfo::first();
+Mail::to($mailData->mail)->send(new Email($mailData));
 
             Cookie::queue(Cookie::forget('shopping_cart'));
 

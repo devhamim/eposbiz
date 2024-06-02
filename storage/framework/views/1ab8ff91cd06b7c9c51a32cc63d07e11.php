@@ -45,6 +45,7 @@
                             <li><a href="<?php echo e(route('privacy.policy')); ?>">Privacy policy</a></li>
                             <li><a href="<?php echo e(route('terms.condition')); ?>">Terms & Condition</a></li>
                             
+                            
                         </ul>
                     </div>
                 </div>

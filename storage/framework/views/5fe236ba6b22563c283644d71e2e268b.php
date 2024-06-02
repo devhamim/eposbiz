@@ -158,9 +158,9 @@
                 </li>
                 <!-- Email list -->
                 <li>
-                    <a class="sidenav-item-link" href="<?php echo e(route('commingsoon')); ?>">
+                    <a class="sidenav-item-link" href="<?php echo e(route('mails.index')); ?>">
                         <i class="mdi mdi-account-group"></i>
-                        <span class="nav-text">Email</span>
+                        <span class="nav-text">Mail</span>
                     </a>
                 </li>
                 <hr>
