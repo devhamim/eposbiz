@@ -50,12 +50,12 @@
                                                             @if (isset($data['item_weight']) && $data['item_weight'] !== null)
                                                                 <span>Package: {{ $data['item_weight'] }}</span>
                                                             @endif
-                                                            @if (isset($data['item_color']) && $data['item_color'] !== null)
+                                                            {{-- @if (isset($data['item_color']) && $data['item_color'] !== null)
                                                                 <span>Color: {{ $data['item_color'] }}</span>
                                                             @endif
                                                             @if (isset($data['item_size']) && $data['item_size'] !== null)
                                                                 <span>Size: {{ $data['item_size'] }}</span>
-                                                            @endif
+                                                            @endif --}}
                                                         </div>
 
                                                     </td>
