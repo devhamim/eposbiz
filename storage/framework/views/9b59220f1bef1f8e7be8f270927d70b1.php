@@ -18,13 +18,13 @@
     <!-- Plugins CSS File -->
     <link rel="stylesheet" href="<?php echo e(asset('frontend/assets/css/bootstrap.min.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(asset('frontend/assets/css/plugins/owl-carousel/owl.carousel.css')); ?>">
-    <link rel="stylesheet" href="<?php echo e(asset('frontend/assets/css/plugins/magnific-popup/magnific-popup.css')); ?>">
+    
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    <link rel="stylesheet" href="<?php echo e(asset('frontend/assets/css/plugins/jquery.countdown.css')); ?>">
+    
     <!-- Main CSS File -->
     
     <link rel="stylesheet" href="<?php echo e(asset('frontend/assets/css/style.css')); ?>">
-    <link rel="stylesheet" href="<?php echo e(asset('frontend/assets/css/plugins/nouislider/nouislider.css')); ?>">
+    
     <link rel="stylesheet" href="<?php echo e(asset('frontend/assets/css/skins/skin-demo-13.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(asset('frontend/assets/css/demos/demo-13.css')); ?>">
 
@@ -157,10 +157,9 @@
     <script src="<?php echo e(asset('frontend/assets/js/owl.carousel.min.js')); ?>"></script>
     <script src="<?php echo e(asset('frontend/assets/js/bootstrap-input-spinner.js')); ?>"></script>
     <script src="<?php echo e(asset('frontend/assets/js/jquery.elevateZoom.min.js')); ?>"></script>
-    <script src="<?php echo e(asset('frontend/assets/js/bootstrap-input-spinner.js')); ?>"></script>
-    <script src="<?php echo e(asset('frontend/assets/js/jquery.magnific-popup.min.js')); ?>"></script>
+    
     <script src="<?php echo e(asset('frontend/assets/js/jquery.plugin.min.js')); ?>"></script>
-    <script src="<?php echo e(asset('frontend/assets/js/jquery.countdown.min.js')); ?>"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 

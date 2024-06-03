@@ -9,9 +9,9 @@
                                 <div class="col-lg-10 mt-2 m-auto">
                                     <div class="product-gallery product-gallery-vertical">
                                         <div class="row">
-                                            <figure id="productDetailsImage" class="product-main-image">
+                                            <div id="productDetailsImage">
 
-                                            </figure>
+                                            </div>
                                             <?php if($products->first()->inventorie_id != null): ?>
                                                 <?php if($products->first()->rel_to_inventorie): ?>
                                                     <?php
@@ -29,7 +29,7 @@
                                                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                                     <div id="product-zoom-gallery" class="product-image-gallery">
                                                         <?php $__currentLoopData = $inventorie->rel_to_attribute; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sl => $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                            <a class="product-gallery-item active" href="#" data-image="<?php echo e(asset('uploads/product')); ?>/<?php echo e($attribute->image); ?>" data-zoom-image="assets/images/products/single/1-big.jpg">
+                                                            <a class="product-gallery-item active" href="#" data-image="<?php echo e(asset('uploads/product')); ?>/<?php echo e($attribute->image); ?>" data-zoom-image="<?php echo e(asset('uploads/product')); ?>/<?php echo e($attribute->image); ?>">
                                                                 <img src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($attribute->image); ?>" alt="product side">
                                                             </a>
                                                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

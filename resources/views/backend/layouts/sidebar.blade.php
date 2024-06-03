@@ -87,14 +87,14 @@
                 <!-- Shipping charge list -->
                 <li>
                     <a class="sidenav-item-link" href="{{ route('delevarycharge.index') }}">
-                        <i class="mdi mdi-account-group"></i>
+                        <i class="mdi mdi-truck-fast"></i>
                         <span class="nav-text">Shipping Charge</span>
                     </a>
                 </li>
                 <!-- Couriar API list -->
                 <li>
                     <a class="sidenav-item-link" href="{{ route('commingsoon') }}">
-                        <i class="mdi mdi-account-group"></i>
+                        <i class="mdi mdi-car"></i>
                         <span class="nav-text">Couriar API</span>
                     </a>
                 </li>
@@ -131,35 +131,35 @@
                 <!-- Markating setting list -->
                 <li>
                     <a class="sidenav-item-link" href="{{ route('markatingSetting.index') }}">
-                        <i class="mdi mdi-account-group"></i>
+                        <i class="mdi mdi-chart-bar"></i>
                         <span class="nav-text">Markating setting</span>
                     </a>
                 </li>
                 <!-- Landing Page list -->
                 <li>
                     <a class="sidenav-item-link" href="{{ route('commingsoon') }}">
-                        <i class="mdi mdi-forklift"></i>
+                        <i class="mdi mdi-book-open"></i>
                         <span class="nav-text">Landing Page</span>
                     </a>
                 </li>
                 <!-- Visitor Count list -->
                 <li>
                     <a class="sidenav-item-link" href="{{ route('visitors') }}">
-                        <i class="mdi mdi-account-group"></i>
+                        <i class="mdi mdi-find-replace"></i>
                         <span class="nav-text">Visitor Count</span>
                     </a>
                 </li>
                 <!-- sms list -->
                 <li>
                     <a class="sidenav-item-link" href="{{ route('sms.index') }}">
-                        <i class="mdi mdi-account-group"></i>
+                        <i class="mdi mdi-message-text"></i>
                         <span class="nav-text">SMS</span>
                     </a>
                 </li>
                 <!-- Email list -->
                 <li>
                     <a class="sidenav-item-link" href="{{ route('mails.index') }}">
-                        <i class="mdi mdi-account-group"></i>
+                        <i class="mdi mdi-email-open"></i>
                         <span class="nav-text">Mail</span>
                     </a>
                 </li>
@@ -167,7 +167,7 @@
                 <!-- Site setting list -->
                 <li>
                     <a class="sidenav-item-link" href="{{ route('setting.index') }}">
-                        <i class="mdi mdi-account-group"></i>
+                        <i class="mdi mdi-settings"></i>
                         <span class="nav-text">Site setting</span>
                     </a>
                 </li>

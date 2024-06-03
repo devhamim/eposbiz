@@ -10,9 +10,9 @@
                                 <div class="col-lg-10 mt-2 m-auto">
                                     <div class="product-gallery product-gallery-vertical">
                                         <div class="row">
-                                            <figure id="productDetailsImage" class="product-main-image">
+                                            <div id="productDetailsImage">
 
-                                            </figure>
+                                            </div>
                                             @if ($products->first()->inventorie_id != null)
                                                 @if ($products->first()->rel_to_inventorie)
                                                     @php
@@ -30,7 +30,7 @@
                                                     @endforeach
                                                     <div id="product-zoom-gallery" class="product-image-gallery">
                                                         @foreach ($inventorie->rel_to_attribute as $sl => $attribute)
-                                                            <a class="product-gallery-item active" href="#" data-image="{{ asset('uploads/product') }}/{{ $attribute->image }}" data-zoom-image="assets/images/products/single/1-big.jpg">
+                                                            <a class="product-gallery-item active" href="#" data-image="{{ asset('uploads/product') }}/{{ $attribute->image }}" data-zoom-image="{{ asset('uploads/product') }}/{{ $attribute->image }}">
                                                                 <img src="{{ asset('uploads/product') }}/{{ $attribute->image }}" alt="product side">
                                                             </a>
                                                         @endforeach

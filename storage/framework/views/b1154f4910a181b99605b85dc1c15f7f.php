@@ -27,8 +27,16 @@
                                                 <th class="text-center">Total</th>
                                             </tr>
                                         </thead>
+
                                         <tbody class="mt-5">
                                             <?php $__currentLoopData = $cart_data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $data): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                            <tr class="text-end">
+                                                <td style="height: 30px"></td>
+                                                <td style="height: 30px"></td>
+                                                <td style="height: 30px"></td>
+                                                <td style="height: 30px"></td>
+                                                <td style="height: 30px">Remove</td>
+                                            </tr>
                                                 <tr class="table-shadow">
                                                     <td style="padding-right: 10px">
                                                         <img width="60px" src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($data['item_image']); ?>" alt="">

@@ -103,7 +103,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <label class="form-label">Description</label>
-                                            <textarea class="form-control @error('description') is-invalid @enderror" name="description" value="{{ old('description') }}" required rows="4"></textarea>
+                                            <textarea id="summernote" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ old('description') }}" required rows="4"></textarea>
                                             @error('description')
                                                 <span class="text-danger">{{$message}}</span>
                                             @enderror
