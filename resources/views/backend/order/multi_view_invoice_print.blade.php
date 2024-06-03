@@ -30,11 +30,6 @@
                             <div class="tm_logo">
                                 <strong>{{ $setting->first()->name }}</strong><br>
                                 <span>#{{ $order->order_id }}</span>
-                                {{-- @if($setting->first()->black_logo != null)
-                                    <img src="{{ asset('uploads/setting') }}/{{ $setting->first()->black_logo }}" width="180px" alt="Logo">
-                                @else
-                                    <img src="{{ asset('uploads/setting') }}/{{ $setting->first()->white_logo }}" width="180px" alt="Logo">
-                                @endif --}}
                             </div>
                         </div>
                         <div class="tm_invoice_right tm_text_right tm_mobile_hide">
@@ -44,14 +39,6 @@
                         </div>
                         <div class="tm_shape_bg tm_accent_bg tm_mobile_hide"></div>
                     </div>
-                    {{-- <div class="tm_invoice_info tm_mb25">
-                        <div class="tm_card_note tm_mobile_hide"><b class="tm_primary_color">Sta: </b>Paypal, Western Union</div>
-                        <div class="tm_invoice_info_list tm_white_color">
-                            <p class="tm_invoice_number tm_m0">Invoice No: <b>#{{ $order->first()->order_id }}</b></p>
-                            <p class="tm_invoice_date tm_m0">Date: <b>{{ $order->created_at->format('d.m.Y') }}</b></p>
-                        </div>
-                        <div class="tm_invoice_seperator tm_accent_bg"></div>
-                    </div> --}}
                     <div class="tm_invoice_head tm_mb10">
                         <div class="tm_invoice_left">
                             <p class="tm_mb2"><b class="tm_primary_color">From:</b></p>
@@ -84,12 +71,22 @@
                                     </thead>
                                     <tbody>
                                         @foreach ($orderproducts as $sl=>$orderpro)
-                                        <tr>
-                                            <td class="tm_width_3">{{ $sl+1 }}</td>
-                                            <td class="tm_width_4">{{ $orderpro->rel_to_pro->name }}</td>
-                                            <td class="tm_width_2">{{ $orderpro->quantity }}</td>
-                                            <td class="tm_width_1">{{ $orderpro->rel_to_attribute->sell_price ?? $orderpro->rel_to_attribute->price }}Tk</td>
-                                        </tr>
+                                        @if ($order->landing == 0)
+                                            <tr>
+                                                <td class="tm_width_3">{{ $sl+1 }}</td>
+                                                <td class="tm_width_4">{{ $orderpro->rel_to_pro->name }}</td>
+                                                <td class="tm_width_2">{{ $orderpro->quantity }}</td>
+                                                <td class="tm_width_1">{{ $orderpro->rel_to_attribute->sell_price ?? $orderpro->rel_to_attribute->price }}Tk</td>
+                                            </tr>
+                                        @else
+                                            <tr>
+                                                <td class="tm_width_3">{{ $sl+1 }}</td>
+                                                <td class="tm_width_4">{{ $orderpro->product_id }}</td>
+                                                <td class="tm_width_2">{{ $orderpro->quantity }}</td>
+                                                <td class="tm_width_1">{{ $orderpro->price }}Tk</td>
+                                            </tr>
+                                        @endif
+
                                         @endforeach
                                     </tbody>
                                 </table>

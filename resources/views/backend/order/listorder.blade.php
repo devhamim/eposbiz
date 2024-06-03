@@ -142,6 +142,11 @@
                                                                 Size: {{ $OrderProduct->rel_to_pro->size_id }}
                                                             @endif
                                                         </span><hr>
+                                                    @elseif ($order->landing == 1)
+                                                        <span>{{ $OrderProduct->product_id }} <br> {{ $OrderProduct->quantity }} x,
+                                                            Color: {{ $order->color }}
+                                                            Size: {{ $order->size }}
+                                                        </span><hr>
                                                     @endif
                                                 @endif
                                             @endforeach

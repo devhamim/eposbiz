@@ -75,22 +75,38 @@
                                 $subtotal = 0;
                             @endphp
                             @foreach ($order_product as $sl=>$order)
-                                <tr>
-                                    <td>{{ $sl+1 }}</td>
-                                    <td>{{ $order->rel_to_pro->name }}</td>
-                                    <td>
-                                        @if ($order->rel_to_attribute->weight)
-                                            <span style="">Package:{{ $order->rel_to_attribute->weight }}, </span>
-                                        @else
-                                            <span style="">Color:{{ $order->rel_to_attribute->color_id }} <span>, Size:{{ $order->rel_to_attribute->size_id }}, </span></span>
-                                        @endif
-                                    </td>
-                                    <td>{{ number_format($order->rel_to_attribute->sell_price ?? $order->rel_to_attribute->price) }} X {{ $order->quantity }}</td>
-                                    <td>{{ number_format(($order->rel_to_attribute->sell_price ?? $order->rel_to_attribute->price) * $order->quantity) }}</td>
-                                </tr>
-                            @php
-                                $subtotal += ($order->rel_to_attribute->sell_price ?? $order->rel_to_attribute->price) * $order->quantity;
-                            @endphp
+                                @if ($orders->landing == 0)
+                                    <tr>
+                                        <td>{{ $sl+1 }}</td>
+                                        <td>{{ $order->rel_to_pro->name }}</td>
+                                        <td>
+                                            @if ($order->rel_to_attribute->weight)
+                                                <span style="">Package:{{ $order->rel_to_attribute->weight }}, </span>
+                                            @else
+                                                <span style="">Color:{{ $order->rel_to_attribute->color_id }} <span>, Size:{{ $order->rel_to_attribute->size_id }}, </span></span>
+                                            @endif
+                                        </td>
+                                        <td>{{ number_format($order->rel_to_attribute->sell_price ?? $order->rel_to_attribute->price) }} X {{ $order->quantity }}</td>
+                                        <td>{{ number_format(($order->rel_to_attribute->sell_price ?? $order->rel_to_attribute->price) * $order->quantity) }}</td>
+                                    </tr>
+                                    @php
+                                        $subtotal += ($order->rel_to_attribute->sell_price ?? $order->rel_to_attribute->price) * $order->quantity;
+                                    @endphp
+                                @else
+                                    <tr>
+                                        <td>{{ $sl+1 }}</td>
+                                        <td>{{ $order->product_id }}</td>
+                                        <td>
+                                            <span style="">Color:{{ $orders->color }} <span>, Size:{{ $orders->size }}, </span></span>
+                                        </td>
+                                        <td>{{ number_format($order->price) }} X {{ $order->quantity }}</td>
+                                        <td>{{ number_format(($order->price)) }} TK</td>
+                                    </tr>
+                                    @php
+                                        $subtotal += $order->price;
+                                    @endphp
+                                @endif
+
                             @endforeach
                         </tbody>
                     </table>
@@ -104,20 +120,20 @@
                                     <td>
                                         <strong class="status">Subtotal</strong>
                                     </td>
-                                    <td>{{ number_format($subtotal) }}</td>
+                                    <td>{{ number_format($subtotal) }} Tk</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <strong class="status">Delivery Charge</strong>
                                     </td>
-                                    <td>{{ $orders->delivery_charge }}</td>
+                                    <td>{{ $orders->delivery_charge }} Tk</td>
                                 </tr>
                                 <tr class="total-pay">
                                     <td class="border-bottom-0">
                                         <strong>Total</strong>
                                     </td>
                                     <td class="border-bottom-0">
-                                        <strong>{{ number_format($orders->total) }}</strong>
+                                        <strong>{{ number_format($orders->total) }} Tk</strong>
                                     </td>
                                 </tr>
                             </tbody>

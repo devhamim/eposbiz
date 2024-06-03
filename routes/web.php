@@ -11,6 +11,7 @@ use App\Http\Controllers\DelevaryChargeController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\landingpageController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\MarkatingController;
 use App\Http\Controllers\OrderController;
@@ -65,10 +66,14 @@ Route::get('/aboutus', [FrontendController::class, 'about_us'])->name('about.us'
 Route::get('/privacy/policy', [FrontendController::class, 'privacy_policy'])->name('privacy.policy');
 Route::get('/terms/condition', [FrontendController::class, 'terms_condition'])->name('terms.condition');
 
+// landing page
+Route::get('/landing/page', [landingpageController::class, 'landing_page'])->name('landing.page');
+Route::post('/landing/order/store', [landingpageController::class, 'landing_order_store'])->name('landing.order.store');
+
+
 // visitor counter
 Route::get('/visitors', [VisitorController::class, 'visitors'])->name('visitors');
 Route::get('/visitors/destroy/{id}', [VisitorController::class, 'visitors_destroy'])->name('visitors.destroy');
-
 
 // login
 Route::group(['prefix' => 'admin'], function(){

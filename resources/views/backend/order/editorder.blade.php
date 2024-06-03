@@ -114,24 +114,39 @@
                                     </thead>
                                     <tbody>
                                         @foreach ($orderproduct as $key=>$product)
-                                            <tr>
-                                                <td>{{ $key+1 }}</td>
-                                                <td><img class="product-img"
-                                                        src="{{ asset('uploads/product') }}/{{ $product->rel_to_attribute->image }}" alt="" /></td>
-                                                <td>
-                                                    <strong>{{ $product->rel_to_pro->name }}</strong><br>
-                                                    @if ($product->rel_to_attribute->color_id)
-                                                       Color: {{ $product->rel_to_attribute->rel_to_color->name }},
-                                                       Size:  {{ $product->rel_to_attribute->rel_to_size->name }}
-                                                    @elseif ($product->rel_to_attribute->weight)
-                                                       Weight: {{ $product->rel_to_attribute->weight }}
-                                                    @endif
-                                                </td>
-                                                <td class="text-center">{{ $product->quantity }}</td>
-                                                <td class="text-center">{{ number_format($product->rel_to_attribute->sell_price ?? $product->rel_to_attribute->price, 2) }} Tk</td>
-                                                <td class="text-right">{{ number_format(($product->rel_to_attribute->sell_price ?? $product->rel_to_attribute->price) * $product->quantity, 2) }} Tk</td>
+                                            @if ($orders->landing == 0)
+                                                <tr>
+                                                    <td>{{ $key+1 }}</td>
+                                                    <td><img class="product-img"
+                                                            src="{{ asset('uploads/product') }}/{{ $product->rel_to_attribute->image }}" alt="" /></td>
+                                                    <td>
+                                                        <strong>{{ $product->rel_to_pro->name }}</strong><br>
+                                                        @if ($product->rel_to_attribute->color_id)
+                                                        Color: {{ $product->rel_to_attribute->rel_to_color->name }},
+                                                        Size:  {{ $product->rel_to_attribute->rel_to_size->name }}
+                                                        @elseif ($product->rel_to_attribute->weight)
+                                                        Weight: {{ $product->rel_to_attribute->weight }}
+                                                        @endif
+                                                    </td>
+                                                    <td class="text-center">{{ $product->quantity }}</td>
+                                                    <td class="text-center">{{ number_format($product->rel_to_attribute->sell_price ?? $product->rel_to_attribute->price, 2) }} Tk</td>
+                                                    <td class="text-right">{{ number_format(($product->rel_to_attribute->sell_price ?? $product->rel_to_attribute->price) * $product->quantity, 2) }} Tk</td>
+                                                </tr>
+                                            @else
+                                                <tr>
+                                                    <td>{{ $key+1 }}</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <strong>{{ $product->product_id }}</strong><br>
+                                                        Color: {{ $orders->color }}
+                                                        Size: {{ $orders->size }}
+                                                    </td>
+                                                    <td class="text-center">{{ $product->quantity }}</td>
+                                                    <td class="text-center">{{ number_format($product->price) }} Tk</td>
+                                                    <td class="text-right">{{ number_format($product->price) }} Tk</td>
+                                                </tr>
+                                            @endif
 
-                                            </tr>
                                         @endforeach
                                         <tr>
                                             <td colspan="4"></td>
@@ -161,13 +176,6 @@
                                             <td class="text-right"><strong>Total</strong></td>
                                             <td class="text-right"><strong>{{ number_format($orders->total) }} Tk</strong></td>
                                         </tr>
-
-                                        {{-- <tr>
-                                            <td colspan="4">
-                                            </td>
-                                            <td class="text-right"><strong>Payment Status</strong></td>
-                                            <td class="text-right"><strong>PAID</strong></td>
-                                        </tr> --}}
                                     </tbody>
                                 </table>
                             </div>
@@ -181,15 +189,6 @@
                     <span class="text-uppercase">Tracking Order No - </span>
                     <span class="text-medium">{{ $orders->order_id }}</span>
                 </div>
-                {{-- <div
-                    class="d-flex flex-wrap flex-sm-nowrap justify-content-between py-3 px-2 bg-secondary">
-                    <div class="w-100 text-center py-1 px-2"><span class="text-medium">Shipped
-                            Via:</span> UPS Ground</div>
-                    <div class="w-100 text-center py-1 px-2"><span class="text-medium">Status:</span>
-                        Checking Quality</div>
-                    <div class="w-100 text-center py-1 px-2"><span class="text-medium">Expected
-                            Date:</span> DEC 09, 2021</div>
-                </div> --}}
                 <div class="card-body mt-5">
                     <div
                         class="steps d-flex flex-wrap flex-sm-nowrap justify-content-between padding-top-2x padding-bottom-1x">
