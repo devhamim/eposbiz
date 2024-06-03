@@ -34,7 +34,7 @@
                                     <th>Price</th>
                                     <th>Sell Price</th>
                                     <th>Tag</th>
-                                    {{-- <th>Status</th> --}}
+                                    <th>Status</th>
                                     <th>Date</th>
                                     <th>Action</th>
                                 </tr>
@@ -148,7 +148,7 @@
                                                         $inventorie = $product->rel_to_inventorie
                                                     @endphp
                                                     @foreach ($inventorie->rel_to_attribute as $attribute)
-                                                        {{ $attribute->price }},
+                                                        {{ $attribute->price }} Tk,
                                                     @endforeach
                                                 @endif
                                             </td>
@@ -158,7 +158,7 @@
                                                         $inventorie = $product->rel_to_inventorie
                                                     @endphp
                                                     @foreach ($inventorie->rel_to_attribute as $attribute)
-                                                        {{ $attribute->sell_price }},
+                                                        {{ $attribute->sell_price }} Tk,
                                                     @endforeach
                                                 @endif
                                             </td>
@@ -271,14 +271,14 @@
                                             </td>
                                             <td>
                                                 @if ($product->price != null)
-                                                    {{ $product->price }}
+                                                    {{ $product->price }} Tk
                                                 @else
                                                     N/A
                                                 @endif
                                             </td>
                                             <td>
                                                 @if ($product->sell_price != null)
-                                                    {{ $product->sell_price }}
+                                                    {{ $product->sell_price }} Tk
                                                 @else
                                                     N/A
                                                 @endif
