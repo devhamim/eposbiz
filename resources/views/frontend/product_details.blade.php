@@ -266,7 +266,6 @@
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="product-desc-tab" role="tabpanel" aria-labelledby="product-desc-link">
                         <div class="product-desc-content">
-                            <h3>Product Information</h3>
                             <p>{!! $products->first()->description !!}</p>
                         </div><!-- End .product-desc-content -->
                     </div><!-- .End .tab-pane -->
