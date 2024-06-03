@@ -157,7 +157,7 @@
                     <div class="col-lg-6 m-auto">
                         <div class="grid grid-rows-1 grid-flow-col gap-4 text-start">
                             <div class="text-center mb-2 text-white">
-                                <a href="#order" class="btn btn-seccess mobile_btn text-white">অনলাইনে আবেদন করুন</a>
+                                <a href="#order" class="btn btn-seccess mobile_btn text-white">অনলাইনে অর্ডার করুন</a>
                             </div>
                         </div>
                     </div>
@@ -249,7 +249,7 @@
                             <div class="col-lg-6 col-12 m-auto">
                                 <div class="grid grid-rows-1 grid-flow-col gap-4 text-start">
                                     <div class="text-center mb-2 text-white">
-                                        <a href="#order" class="btn btn-seccess mobile_btn text-white">অনলাইনে আবেদন করুন</a>
+                                        <a href="#order" class="btn btn-seccess mobile_btn text-white">অনলাইনে অর্ডার করুন</a>
                                     </div>
                                 </div>
                             </div>
@@ -310,7 +310,7 @@
                             <div class="col-lg-6 col-12 m-auto">
                                 <div class="grid grid-rows-1 grid-flow-col gap-4 text-start">
                                     <div class="text-center mb-2 text-white">
-                                        <a href="#order" class="btn btn-seccess mobile_btn text-white">অনলাইনে আবেদন করুন</a>
+                                        <a href="#order" class="btn btn-seccess mobile_btn text-white">অনলাইনে অর্ডার করুন</a>
                                     </div>
                                 </div>
                             </div>
@@ -402,7 +402,7 @@
                     <div class="col-lg-6 m-auto">
                         <div class="grid grid-rows-1 grid-flow-col gap-4 text-start">
                             <div class="text-center mb-2 text-white">
-                                <a href="#order" class="btn btn-seccess mobile_btn text-white">অনলাইনে আবেদন করুন</a>
+                                <a href="#order" class="btn btn-seccess mobile_btn text-white">অনলাইনে অর্ডার করুন</a>
                             </div>
                         </div>
                     </div>
