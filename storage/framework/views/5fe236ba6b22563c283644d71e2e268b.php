@@ -4,9 +4,9 @@
         <div class="">
             <a href="<?php echo e(url('/')); ?>" target="_blank">
                 <?php if($setting->first()->black_logo != null): ?>
-                    <img src="<?php echo e(asset('uploads/setting')); ?>/<?php echo e($setting->first()->black_logo); ?>" class="ec-brand-icon" width="180px" alt="Logo">
+                    <img src="<?php echo e(asset('uploads/setting')); ?>/<?php echo e($setting->first()->black_logo); ?>" class="ec-brand-icon" height="43px" width="180px" alt="Logo">
                 <?php else: ?>
-                    <img src="<?php echo e(asset('uploads/setting')); ?>/<?php echo e($setting->first()->white_logo); ?>" class="ec-brand-icon" width="180px" alt="Logo">
+                    <img src="<?php echo e(asset('uploads/setting')); ?>/<?php echo e($setting->first()->white_logo); ?>" class="ec-brand-icon" height="43px" width="180px" alt="Logo">
                 <?php endif; ?>
             </a>
         </div>
