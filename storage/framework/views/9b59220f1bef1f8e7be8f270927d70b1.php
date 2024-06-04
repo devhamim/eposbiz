@@ -29,15 +29,15 @@
     <link rel="stylesheet" href="<?php echo e(asset('frontend/assets/css/demos/demo-13.css')); ?>">
 
     <!-- Meta Pixel Code -->
-<?php if($setting->first()->fb_pixel != null): ?>
-    <?php echo $setting->first()->fb_pixel; ?>
+<?php if($markatingsetting->first()->fb_pixel != null): ?>
+    <?php echo $markatingsetting->first()->fb_pixel; ?>
 
 <?php endif; ?>
 
 
 <!-- googletag Code -->
-<?php if($setting->first()->google_tag != null): ?>
-    <?php echo $setting->first()->google_tag; ?>
+<?php if($markatingsetting->first()->google_tag != null): ?>
+    <?php echo $markatingsetting->first()->google_tag; ?>
 
 <?php endif; ?>
 <!-- End googletag Code -->

@@ -29,14 +29,14 @@
     <link rel="stylesheet" href="{{asset('frontend/assets/css/demos/demo-13.css')}}">
 
     <!-- Meta Pixel Code -->
-@if($setting->first()->fb_pixel != null)
-    {!! $setting->first()->fb_pixel !!}
+@if($markatingsetting->first()->fb_pixel != null)
+    {!! $markatingsetting->first()->fb_pixel !!}
 @endif
 {{-- <!-- End Meta Pixel Code --> --}}
 
 <!-- googletag Code -->
-@if($setting->first()->google_tag != null)
-    {!! $setting->first()->google_tag !!}
+@if($markatingsetting->first()->google_tag != null)
+    {!! $markatingsetting->first()->google_tag !!}
 @endif
 <!-- End googletag Code -->
 <style>

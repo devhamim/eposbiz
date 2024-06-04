@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Category;
+use App\Models\markatingsetting;
 use App\Models\Setting;
 use Illuminate\Support\ServiceProvider;
 use View;
@@ -70,6 +71,11 @@ class AppServiceProvider extends ServiceProvider
             $view->with('setting', Setting::all());
         });
 
+        // frontend app
+        View::composer('frontend.layouts.app', function ($view){
+            $view->with('markatingsetting', markatingsetting::all());
+        });
+
         // backend footer
         View::composer('backend.layouts.footer', function ($view){
             $view->with('setting', Setting::all());
@@ -98,6 +104,11 @@ class AppServiceProvider extends ServiceProvider
         // landing page
         View::composer('landingpage.secondpage', function ($view){
             $view->with('setting', Setting::all());
+        });
+
+        // landing page
+        View::composer('landingpage.secondpage', function ($view){
+            $view->with('markatingsetting', markatingsetting::all());
         });
 
     }

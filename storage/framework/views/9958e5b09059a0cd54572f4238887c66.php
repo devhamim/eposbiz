@@ -61,15 +61,15 @@
     </style>
 
     <!-- Meta Pixel Code -->
-    <?php if($setting->first()->fb_pixel != null): ?>
-        <?php echo $setting->first()->fb_pixel; ?>
+    <?php if($markatingsetting->first()->fb_pixel != null): ?>
+        <?php echo $markatingsetting->first()->fb_pixel; ?>
 
     <?php endif; ?>
     
 
     <!-- googletag Code -->
-    <?php if($setting->first()->google_tag != null): ?>
-        <?php echo $setting->first()->google_tag; ?>
+    <?php if($markatingsetting->first()->google_tag != null): ?>
+        <?php echo $markatingsetting->first()->google_tag; ?>
 
     <?php endif; ?>
     <!-- End googletag Code -->
@@ -159,7 +159,7 @@
                     <div class="col-lg-6 m-auto">
                         <div class="grid grid-rows-1 grid-flow-col gap-4 text-start">
                             <div class="text-center mb-2 text-white">
-                                <a href="#order" class="btn btn-seccess mobile_btn text-white">অনলাইনে আবেদন করুন</a>
+                                <a href="#order" class="btn btn-seccess mobile_btn text-white">অনলাইনে অর্ডার করুন</a>
                             </div>
                         </div>
                     </div>
@@ -287,7 +287,7 @@
                     <div class="col-lg-6 m-auto">
                         <div class="grid grid-rows-1 grid-flow-col gap-4 text-start">
                             <div class="text-center mb-2 text-white">
-                                <a href="#order" class="btn btn-seccess mobile_btn text-white">অনলাইনে আবেদন করুন</a>
+                                <a href="#order" class="btn btn-seccess mobile_btn text-white">অনলাইনে অর্ডার করুন</a>
                             </div>
                         </div>
                     </div>
