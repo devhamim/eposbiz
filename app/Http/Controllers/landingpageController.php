@@ -26,8 +26,6 @@ class landingpageController extends Controller
                 'name' => 'required',
                 'mobile' => 'required|min:11|max:11',
                 'address' => 'required',
-                'color' => 'required',
-                'size' => 'required',
             ]);
 
             $lastOrder = Order::orderBy('id', 'desc')->first();
@@ -82,7 +80,6 @@ class landingpageController extends Controller
                     'sub_total' => $price,
                     'delivery_charge' => $request->shipping_cost,
                     'total' => $price + $request->shipping_cost,
-                    'size' => $request->size,
                     'color' => $request->color,
                     'landing' => 1,
                     'created_at' => Carbon::now(),
