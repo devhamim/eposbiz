@@ -370,7 +370,7 @@
                             <img src="{{ asset('landingpage/images/product/22.jpg') }}" alt="">
                         </div>
                         <div class="px-3">
-                            <img src="{{ asset('landingpage/images/product/33.jpg') }}" alt="">
+                            <img src="{{ asset('landingpage/images/product/2.jpg') }}" alt="">
                         </div>
                         <div class="px-3">
                             <img src="{{ asset('landingpage/images/product/44.jpg') }}" alt="">
