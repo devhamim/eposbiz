@@ -519,11 +519,11 @@
                                         @enderror
                                     </div>
                                     <div class="col-lg-6 my-3">
-                                        <label class="form-label" for="">সাইজ : <span class="text-danger">*</span></label>
+                                        <label class="form-label" for="">সাইজ : </label>
                                         <input type="text" name="size" class="form-control" placeholder="সাইজ লিখুন ( যেমন ৩২,৩৪ ইত্যাদি) *">
                                     </div>
                                     <div class="col-lg-6 my-3">
-                                        <label class="form-label" for="">কালার : <span class="text-danger">*</span></label>
+                                        <label class="form-label" for="">কালার : </label>
                                         <input type="text" name="color" class="form-control" placeholder="কালার লিখুন(লাল,কালো, অ্যাশ,টিয়া) *">
                                     </div>
                                     <div class="col-lg-12 my-3">
