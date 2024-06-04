@@ -11,9 +11,9 @@
 
                 <a href="<?php echo e(url('/')); ?>" class="mb-1">
                     <?php if($setting->first()->white_logo != null): ?>
-                        <img src="<?php echo e(asset('uploads/setting')); ?>/<?php echo e($setting->first()->white_logo); ?>" width="200px" alt="Logo">
+                        <img src="<?php echo e(asset('uploads/setting')); ?>/<?php echo e($setting->first()->white_logo); ?>" height="43px" width="200px" alt="Logo">
                     <?php else: ?>
-                        <img src="<?php echo e(asset('uploads/setting')); ?>/<?php echo e($setting->first()->black_logo); ?>" width="200px" alt="Logo">
+                        <img src="<?php echo e(asset('uploads/setting')); ?>/<?php echo e($setting->first()->black_logo); ?>" height="43px" width="200px" alt="Logo">
                     <?php endif; ?>
                 </a>
             </div>

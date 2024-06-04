@@ -128,10 +128,6 @@
                                         <img width="16px" draggable="false" role="img" class="emoji" alt="✅" src="https://s.w.org/images/core/emoji/15.0.3/svg/2705.svg">
                                         ওড়নার কাপড় দেওয়া আছে ৫ হাত।
                                     </li>
-                                    <li>
-                                        <img width="16px" draggable="false" role="img" class="emoji" alt="✅" src="https://s.w.org/images/core/emoji/15.0.3/svg/2705.svg">
-                                        সৌদি আরবের সব শহরে প্রবেশ করা যাবে।
-                                    </li>
                                 </ul>
                             </div>
                         </div>
