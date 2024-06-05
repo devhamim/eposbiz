@@ -127,7 +127,7 @@
                                                     @if ($OrderProduct->rel_to_attribute != null)
                                                         <span>{{ $OrderProduct->rel_to_pro->name??'' }} <br> {{ $OrderProduct->quantity }} x {{ $OrderProduct->price }},
                                                             @if ($OrderProduct->rel_to_attribute->weight != null)
-                                                                Weight: {{ $OrderProduct->rel_to_attribute->weight }}
+                                                                Package: {{ $OrderProduct->rel_to_attribute->weight }}
                                                             @else
                                                                 Color: {{ $OrderProduct->rel_to_attribute->rel_to_color->name }}
                                                                 Size: {{ $OrderProduct->rel_to_attribute->rel_to_size->name }}
@@ -136,7 +136,7 @@
                                                     @elseif ($OrderProduct->rel_to_pro != null)
                                                         <span>{{ $OrderProduct->rel_to_pro->name }} <br> {{ $OrderProduct->quantity }} x {{ $OrderProduct->rel_to_pro ? $OrderProduct->rel_to_pro->sell_price : $OrderProduct->rel_to_pro->price }},
                                                             @if ($OrderProduct->rel_to_pro->weight != null)
-                                                                Weight: {{ $OrderProduct->rel_to_pro->weight }}
+                                                                Package: {{ $OrderProduct->rel_to_pro->weight }}
                                                             @else
                                                                 Color: {{ $OrderProduct->rel_to_pro->color_id }}
                                                                 Size: {{ $OrderProduct->rel_to_pro->size_id }}

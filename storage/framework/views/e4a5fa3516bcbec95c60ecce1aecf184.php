@@ -9,15 +9,14 @@
                                 <div class="col-lg-10 mt-2 m-auto">
                                     <div class="product-gallery product-gallery-vertical">
                                         <div class="row">
-                                            
                                             <?php if($products->first()->inventorie_id != null): ?>
                                                 <?php if($products->first()->rel_to_inventorie): ?>
                                                     <?php
                                                         $inventorie = $products->first()->rel_to_inventorie
                                                     ?>
-
                                                     <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sl => $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                        <figure id="productDetailsImage" class="product-main-image productDetailsImageemptey">
+                                                        
+                                                        <figure class="product-main-image">
                                                             <img id="product-zoom" src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($attribute->image); ?>" data-zoom-image="<?php echo e(asset('uploads/product')); ?>/<?php echo e($attribute->image); ?>" alt="product image">
 
                                                             <a href="#" id="btn-product-gallery" class="btn-product-gallery">
@@ -35,8 +34,7 @@
                                                 <?php endif; ?>
                                             <?php else: ?>
                                                 <figure class="product-main-image">
-                                                    <img id="product-zoom"
-                                                        src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($products->first()->image); ?>"
+                                                    <img id="product-zoom" src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($products->first()->image); ?>"
                                                         data-zoom-image="<?php echo e(asset('uploads/product')); ?>/<?php echo e($products->first()->image); ?>"
                                                         alt="product image">
                                                     <a href="" id="btn-product-gallery" class="btn-product-gallery">

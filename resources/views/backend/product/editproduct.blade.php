@@ -275,7 +275,7 @@
                                         <label>${attribute.size_name}</label>
                                     </div>
                                     <div class="col-md-4">
-                                        <label class="form-label">Weight </label>
+                                        <label class="form-label">Package </label>
                                         <input type="text" class="form-control" value="${attribute.weight}" id="weight">
                                     </div>
                                     <div class="col-md-4">

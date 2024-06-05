@@ -60,7 +60,7 @@
                                                     size: {{  $attribute->size_id }},
                                                 @endif
                                                 @if ($attribute->weight)
-                                                    Weight: {{  $attribute->weight }},
+                                                    Package: {{  $attribute->weight }},
                                                 @endif
                                                 Price: {{  $attribute->price }}, Sell Price: {{  $attribute->sell_price }}, Quantity: {{  $attribute->quantity }},<br>
                                             @endforeach

@@ -125,7 +125,7 @@
                                                         Color: {{ $product->rel_to_attribute->rel_to_color->name }},
                                                         Size:  {{ $product->rel_to_attribute->rel_to_size->name }}
                                                         @elseif ($product->rel_to_attribute->weight)
-                                                        Weight: {{ $product->rel_to_attribute->weight }}
+                                                        Package: {{ $product->rel_to_attribute->weight }}
                                                         @endif
                                                     </td>
                                                     <td class="text-center">{{ $product->quantity }}</td>

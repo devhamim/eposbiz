@@ -16,7 +16,8 @@
                                                         $inventorie = $products->first()->rel_to_inventorie
                                                     @endphp
                                                     @foreach ($inventorie->rel_to_attribute->take(1) as $sl => $attribute)
-                                                        <figure id="productDetailsImage" class="product-main-image productDetailsImageemptey">
+                                                        {{-- <figure id="productDetailsImage" class="product-main-image productDetailsImageemptey"> --}}
+                                                        <figure class="product-main-image">
                                                             <img id="product-zoom" src="{{ asset('uploads/product') }}/{{ $attribute->image }}" data-zoom-image="{{ asset('uploads/product') }}/{{ $attribute->image }}" alt="product image">
 
                                                             <a href="#" id="btn-product-gallery" class="btn-product-gallery">

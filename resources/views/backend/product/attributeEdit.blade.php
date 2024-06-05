@@ -114,7 +114,7 @@
                                             @enderror
                                         </div>
                                         <div class="col-md-4 my-3">
-                                            <label class="form-label">Weight <span class="text-danger">*</span></label>
+                                            <label class="form-label">Package <span class="text-danger">*</span></label>
                                             <input type="text" class="form-control" name="weight[]" value="{{ old('weight', $detail->weight) }}">
                                             @error('weight')
                                                 <span class="text-danger">{{$message}}</span>
@@ -212,7 +212,7 @@
                                 <input type="number" class="form-control" name="sell_price[]">
                             </div>
                             <div class="col-md-4 my-3">
-                                <label class="form-label">Weight <span class="text-danger">*</span></label>
+                                <label class="form-label">Package <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" name="weight[]">
                             </div>
                             <div class="col-md-4">
