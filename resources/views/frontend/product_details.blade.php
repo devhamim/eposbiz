@@ -10,17 +10,13 @@
                                 <div class="col-lg-10 mt-2 m-auto">
                                     <div class="product-gallery product-gallery-vertical">
                                         <div class="row">
-                                            <div id="productDetailsImage">
-
-                                            </div>
                                             @if ($products->first()->inventorie_id != null)
                                                 @if ($products->first()->rel_to_inventorie)
                                                     @php
                                                         $inventorie = $products->first()->rel_to_inventorie
                                                     @endphp
-
                                                     @foreach ($inventorie->rel_to_attribute->take(1) as $sl => $attribute)
-                                                        <figure class="product-main-image productDetailsImageemptey">
+                                                        <figure id="productDetailsImage" class="product-main-image productDetailsImageemptey">
                                                             <img id="product-zoom" src="{{ asset('uploads/product') }}/{{ $attribute->image }}" data-zoom-image="{{ asset('uploads/product') }}/{{ $attribute->image }}" alt="product image">
 
                                                             <a href="#" id="btn-product-gallery" class="btn-product-gallery">
@@ -38,8 +34,7 @@
                                                 @endif
                                             @else
                                                 <figure class="product-main-image">
-                                                    <img id="product-zoom"
-                                                        src="{{ asset('uploads/product') }}/{{ $products->first()->image }}"
+                                                    <img id="product-zoom" src="{{ asset('uploads/product') }}/{{ $products->first()->image }}"
                                                         data-zoom-image="{{ asset('uploads/product') }}/{{ $products->first()->image }}"
                                                         alt="product image">
                                                     <a href="" id="btn-product-gallery" class="btn-product-gallery">
@@ -266,6 +261,7 @@
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="product-desc-tab" role="tabpanel" aria-labelledby="product-desc-link">
                         <div class="product-desc-content">
+                            <h3>Product Information</h3>
                             <p>{!! $products->first()->description !!}</p>
                         </div><!-- End .product-desc-content -->
                     </div><!-- .End .tab-pane -->
@@ -340,15 +336,11 @@
                 </figure>
             `);
             $('#productDetailsImage').html(`
-                <div>
-                    <figure class="product-main-image productDetailsImageemptey">
-                        <img id="product-zoom" src="{{ asset('uploads/product') }}/${response.image}" data-zoom-image="{{ asset('uploads/product') }}/${response.image}" alt="product image">
+                <img id="product-zoom" src="{{ asset('uploads/product') }}/${response.image}" data-zoom-image="{{ asset('uploads/product') }}/${response.image}" alt="product image">
 
-                        <a href="#" id="btn-product-gallery" class="btn-product-gallery">
-                            <i class="icon-arrows"></i>
-                        </a>
-                    </figure>
-                </div>
+                <a href="#" id="btn-product-gallery" class="btn-product-gallery">
+                    <i class="icon-arrows"></i>
+                </a>
             `);
         }
     </script>

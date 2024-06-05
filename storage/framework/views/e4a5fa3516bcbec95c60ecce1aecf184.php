@@ -9,9 +9,7 @@
                                 <div class="col-lg-10 mt-2 m-auto">
                                     <div class="product-gallery product-gallery-vertical">
                                         <div class="row">
-                                            <div id="productDetailsImage">
-
-                                            </div>
+                                            
                                             <?php if($products->first()->inventorie_id != null): ?>
                                                 <?php if($products->first()->rel_to_inventorie): ?>
                                                     <?php
@@ -19,7 +17,7 @@
                                                     ?>
 
                                                     <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sl => $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                        <figure class="product-main-image productDetailsImageemptey">
+                                                        <figure id="productDetailsImage" class="product-main-image productDetailsImageemptey">
                                                             <img id="product-zoom" src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($attribute->image); ?>" data-zoom-image="<?php echo e(asset('uploads/product')); ?>/<?php echo e($attribute->image); ?>" alt="product image">
 
                                                             <a href="#" id="btn-product-gallery" class="btn-product-gallery">
@@ -272,6 +270,7 @@ unset($__errorArgs, $__bag); ?>
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="product-desc-tab" role="tabpanel" aria-labelledby="product-desc-link">
                         <div class="product-desc-content">
+                            <h3>Product Information</h3>
                             <p><?php echo $products->first()->description; ?></p>
                         </div><!-- End .product-desc-content -->
                     </div><!-- .End .tab-pane -->
@@ -346,15 +345,11 @@ unset($__errorArgs, $__bag); ?>
                 </figure>
             `);
             $('#productDetailsImage').html(`
-                <div>
-                    <figure class="product-main-image productDetailsImageemptey">
-                        <img id="product-zoom" src="<?php echo e(asset('uploads/product')); ?>/${response.image}" data-zoom-image="<?php echo e(asset('uploads/product')); ?>/${response.image}" alt="product image">
+                <img id="product-zoom" src="<?php echo e(asset('uploads/product')); ?>/${response.image}" data-zoom-image="<?php echo e(asset('uploads/product')); ?>/${response.image}" alt="product image">
 
-                        <a href="#" id="btn-product-gallery" class="btn-product-gallery">
-                            <i class="icon-arrows"></i>
-                        </a>
-                    </figure>
-                </div>
+                <a href="#" id="btn-product-gallery" class="btn-product-gallery">
+                    <i class="icon-arrows"></i>
+                </a>
             `);
         }
     </script>
