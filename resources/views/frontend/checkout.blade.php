@@ -60,9 +60,9 @@
 
                                                     </td>
                                                     <td>
-                                                        Tk <span class="product-price" style="display: inline">
+                                                        <span class="product-price" style="display: inline">
                                                             {{ isset($data['item_price']) ? $data['item_price'] : $data['product_price'] }}
-                                                        </span> X
+                                                        </span> Tk X
                                                     </td>
                                                     <td class="ps-3 text-center mt-2 pro_details_ico" style="padding-top: 15px; justify-content: center; width: 10%; margin: 0 auto">
                                                         <input type="number" name="quantity[{{ $data['item_id'] }}]" class="qty-input form-control" value="{{ $data['item_quantity'] }}" min="1" max="100" step="1" data-decimals="0" required>
@@ -70,7 +70,7 @@
                                                     <td>
                                                         <div class="cart-product-quantity">
                                                             <input type="hidden" class="product-id" value="{{ $data['item_id'] }}">
-                                                            <span class="subtotal">Tk {{ ($data['item_quantity'] ?? 1) * ($data['item_price'] ?? $data['product_price']) }}</span>
+                                                            <span class="subtotal">{{ ($data['item_quantity'] ?? 1) * ($data['item_price'] ?? $data['product_price']) }} Tk</span>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -86,7 +86,7 @@
                                                 <td>সাব-টোটাল (+)</td>
                                                 <td></td>
                                                 <td></td>
-                                                <td class="grand_total_price">Tk {{ $total }}</td>
+                                                <td class="grand_total_price">{{ $total }} Tk</td>
                                             </tr>
                                             <tr class="summary-total delivery-charge-row checkout_bottom_border" style="display: none;">
                                                 <td>ডেলিভারি চার্জ (+)</td>
@@ -101,7 +101,7 @@
                                                 <td>টোটাল</td>
                                                 <td></td>
                                                 <td></td>
-                                                <td class="grand_total"><span class="grand_span">Tk {{ $total }}</span></td>
+                                                <td class="grand_total"><span class="grand_span">{{ $total }} Tk</span></td>
                                             </tr>
                                             <input type="hidden" name="sub_total" value="{{ $total }}">
                                             <input type="hidden" name="total" value="{{ $total }}">
@@ -265,10 +265,10 @@
             }
             var grandTotal = subtotal + deliveryCharge;
 
-            $('#delivery-charge').text('Tk ' + deliveryCharge);
+            $('#delivery-charge').text(deliveryCharge + ' Tk');
             $('#delivery-charge-input').val(deliveryCharge);
             $('.summary-total.delivery-charge-row').show();
-            $('.grand_total').text('Tk ' + grandTotal).show();
+            $('.grand_total').text(grandTotal + ' Tk').show();
             updateGrandTotalPrice();
         });
 
@@ -278,7 +278,7 @@
                 var subtotal = parseFloat($(this).text().replace('Tk ', ''));
                 totalPrice += subtotal;
             });
-            $(".grand_total_price").text("Tk " + totalPrice);
+            $(".grand_total_price").text(totalPrice + ' Tk');
             $("input[name='sub_total']").val(totalPrice);
         }
 
@@ -297,7 +297,7 @@
                 deliveryCharge = {{ $delevarychareg->where('id', 2)->first()->charge }};
             }
             grandTotal += deliveryCharge;
-            $(".grand_total").text("Tk " + grandTotal);
+            $(".grand_total").text(grandTotal + ' Tk');
             $("input[name='total']").val(grandTotal);
         }
     });
