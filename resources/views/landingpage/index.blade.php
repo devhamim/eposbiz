@@ -1809,6 +1809,7 @@
         media="all" />
 
 {{-- main js --}}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const quantityInput = document.getElementById('quantity');
@@ -1848,6 +1849,29 @@
     });
 </script>
 
+        @if (session('success'))
+            {
+            <script>
+                Swal.fire({
+                    icon: "success",
+                    title: "Success...",
+                    text: "Your order have been success",
+                });
+            </script>
+            }
+        @endif
+        @if (session('error'))
+            {
+            <script>
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Something went wrong!",
+                    footer: '<a href="#">Why do I have this issue?</a>'
+                });
+            </script>
+            }
+        @endif
 {{-- main js end --}}
 
     <script type="text/javascript" id="woo-variation-swatches-js-extra">
