@@ -16,11 +16,11 @@ class landingpageController extends Controller
 
 
     //sharee
-    function sharee(){
+    function landing_page(){
         return view('landingpage.index');
     }
     // landing_order_store
-    function sharee_order_store(Request $request){
+    function landing_order_store(Request $request){
             $request->validate([
                 'name' => 'required',
                 'mobile' => 'required|min:11|max:11',
@@ -78,12 +78,12 @@ class landingpageController extends Controller
     }
 
     //cloth
-    function landing_page(){
+    function sharee(){
         return view('landingpage.secondpage');
     }
 
     // landing_order_store
-    function landing_order_store(Request $request){
+    function sharee_order_store(Request $request){
             $request->validate([
                 'name' => 'required',
                 'mobile' => 'required|min:11|max:11',

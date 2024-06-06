@@ -1484,7 +1484,7 @@
                                 <!-- CHECKOUT SHORTCODE -->
                                 <div class="woocommerce">
                                     <div class="woocommerce-notices-wrapper"></div>
-                                    <form action="{{ route('sharee.order.store') }}" method="POST">
+                                    <form action="{{ route('landing.order.store') }}" method="POST">
                                         @csrf
                                         <div class="wcf-product-option-wrap wcf-yp-skin-classic wcf-product-option-before-customer">
                                             <h3 id="your_products_heading"> নিচে আপনার প্রোডাক্টটি নিবার্চন করুন </h3>
