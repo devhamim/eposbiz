@@ -1609,7 +1609,7 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>
                                                         <p class="form-row address-field form-row-first thwcfd-required thwcfd-field-wrapper thwcfd-field-text wcf-column-100 validate-required" id="billing_address_1_field" data-priority="20">
-                                                            <label for="color" class="">কালার&nbsp;
+                                                            <label for="color" class="">পছন্দের কালারটি সিলেক্ট করুন&nbsp;
                                                                 <abbr class="required" title="required">*</abbr>
                                                             </label>
                                                             <span class="woocommerce-input-wrapper">
