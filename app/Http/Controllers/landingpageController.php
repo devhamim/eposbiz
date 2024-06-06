@@ -55,7 +55,7 @@ class landingpageController extends Controller
                 ]);
                 if($request->radio_btn == 1){
                     $price = 950;
-                    $product_name = 'Modina Dying >টু পিস জামা+ওড়না ১ সেট>৬০ বডি';
+                    $product_name = 'প্রিমিয়াম - টু পিচ সেট জামা + ওড়না';
                 }
                 $subtotal = $price*$request->quantity;
                 Order::insert([

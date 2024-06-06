@@ -885,8 +885,9 @@
                                 font-size: 59px
                             }
                         </style>
-                        <h2 class="elementor-heading-title elementor-size-default">প্রিয় মানুষকে মনের মতো সাজিয়ে নিন
-                            এই সুন্দর শাড়িটি গিফট দিয়ে।</h2>
+                        <h2 class="elementor-heading-title elementor-size-default">
+                            প্রিয় মানুষকে মনের মতো সাজিয়ে নিন এই সুন্দর ড্রেস টি গিফট দিয়ে।
+                        </h2>
                     </div>
                 </div>
                 <div class="elementor-element elementor-element-078d25b elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel"
@@ -920,22 +921,28 @@
                                     aria-label="1 of 3">
                                     <figure class="swiper-slide-inner"><img decoding="async"
                                             class="swiper-slide-image"
-                                            src="https://baharicolor.online/wp-content/uploads/2024/04/1.webp"
-                                            alt="1.webp" /></figure>
+                                            src="<?php echo e(asset('landingpage/sharee/image/1.jpg')); ?>"
+                                            alt="1.jpg" /></figure>
                                 </div>
                                 <div class="swiper-slide" role="group" aria-roledescription="slide"
                                     aria-label="2 of 3">
                                     <figure class="swiper-slide-inner"><img decoding="async"
                                             class="swiper-slide-image"
-                                            src="https://baharicolor.online/wp-content/uploads/2024/04/6.webp"
-                                            alt="6.webp" /></figure>
+                                            src="<?php echo e(asset('landingpage/sharee/image/2.jpg')); ?>" /></figure>
                                 </div>
                                 <div class="swiper-slide" role="group" aria-roledescription="slide"
                                     aria-label="3 of 3">
                                     <figure class="swiper-slide-inner"><img decoding="async"
                                             class="swiper-slide-image"
-                                            src="https://baharicolor.online/wp-content/uploads/2024/04/5.webp"
-                                            alt="5.webp" /></figure>
+                                            src="<?php echo e(asset('landingpage/sharee/image/3.jpg')); ?>"
+                                            alt="3.jpg" /></figure>
+                                </div>
+                                <div class="swiper-slide" role="group" aria-roledescription="slide"
+                                    aria-label="3 of 3">
+                                    <figure class="swiper-slide-inner"><img decoding="async"
+                                            class="swiper-slide-image"
+                                            src="<?php echo e(asset('landingpage/sharee/image/4.jpg')); ?>"
+                                            alt="4.jpg" /></figure>
                                 </div>
                             </div>
                             <div class="elementor-swiper-button elementor-swiper-button-prev" role="button"
@@ -985,24 +992,32 @@
                                 <div class="swiper-slide" role="group" aria-roledescription="slide"
                                     aria-label="1 of 3">
                                     <figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy"
-                                            data-src="https://baharicolor.online/wp-content/uploads/2024/04/4.webp"
-                                            alt="4.webp" />
+                                            data-src="<?php echo e(asset('landingpage/sharee/image/11.jpg')); ?>"
+                                            alt="11.jpg" />
                                         <div class="swiper-lazy-preloader"></div>
                                     </figure>
                                 </div>
                                 <div class="swiper-slide" role="group" aria-roledescription="slide"
                                     aria-label="2 of 3">
                                     <figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy"
-                                            data-src="https://baharicolor.online/wp-content/uploads/2024/04/3.webp"
-                                            alt="3.webp" />
+                                            data-src="<?php echo e(asset('landingpage/sharee/image/22.jpg')); ?>"
+                                            alt="22.jpg" />
                                         <div class="swiper-lazy-preloader"></div>
                                     </figure>
                                 </div>
                                 <div class="swiper-slide" role="group" aria-roledescription="slide"
                                     aria-label="3 of 3">
                                     <figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy"
-                                            data-src="https://baharicolor.online/wp-content/uploads/2024/04/2.webp"
-                                            alt="2.webp" />
+                                            data-src="<?php echo e(asset('landingpage/sharee/image/33.jpg')); ?>"
+                                            alt="33.jpg" />
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide" role="group" aria-roledescription="slide"
+                                    aria-label="3 of 3">
+                                    <figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy"
+                                            data-src="<?php echo e(asset('landingpage/sharee/image/44.jpg')); ?>"
+                                            alt="44.jpg" />
                                         <div class="swiper-lazy-preloader"></div>
                                     </figure>
                                 </div>
@@ -1083,8 +1098,7 @@
                                 display: inline-block
                             }
                         </style>
-                        <p><span style="font-weight: 400;">&#8221;দেখতে অসম্ভব সুন্দর এই ১২ হাতের হাফ সিল্ক জামদানি
-                                শাড়িটি</span><span style="font-weight: 400;">খুবই প্রিমিয়াম ও আরামদায়ক&#8221;</span>
+                        <p><span style="font-weight: 400;">&#8221;দেখতে অসম্ভব সুন্দর এই জামা + ওড়না সেট </span><span style="font-weight: 400;">খুবই প্রিমিয়াম ও আরামদায়ক&#8221;</span>
                         </p>
                     </div>
                 </div>
@@ -1201,7 +1215,7 @@
                                 }
                             </style>
                             <div class="elementor-wrapper elementor-open-inline">
-                                <div class="elementor-video"></div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/VZW2Y1gHJiw?si=pzk1cOYJC0Q4VPuG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -1215,7 +1229,7 @@
                     <div class="elementor-element elementor-element-449a027 elementor-widget elementor-widget-heading"
                         data-id="449a027" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">প্রিমিয়াম -সিল্ক শাড়ী
+                            <h2 class="elementor-heading-title elementor-size-default">প্রিমিয়াম - টু পিচ সেট জামা + ওড়না
                             </h2>
                         </div>
                     </div>
@@ -1232,7 +1246,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">হাফ সিল্ক স্কিন প্রিন্ট শাড়ি</span>
+                                    <span class="elementor-icon-list-text">মদীনা প্রিন্ট করা কালার ১০০% গ্যারান্টি।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1242,7 +1256,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">*হাফসিল্ক জামদানী শাড়ি</span>
+                                    <span class="elementor-icon-list-text">লং ৪৭"+ ফেব্রিক্স ১০০%কটন।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1252,7 +1266,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">শাড়ি লম্বা ১২ হাত</span>
+                                    <span class="elementor-icon-list-text">জামা+ওরনা টু পিস।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1262,7 +1276,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">ব্লাউজ পিচ ( সাদা কালার + প্রিন্ট)</span>
+                                    <span class="elementor-icon-list-text">পায়জামার কাপড় থাকবে না।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1272,7 +1286,17 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">আধুনিক ও রুজিশীল ডিজাইন।</span>
+                                    <span class="elementor-icon-list-text">বডি ৬০"পর্যন্ত বানাতে পারবেন।</span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                            </path>
+                                        </svg> </span>
+                                    <span class="elementor-icon-list-text">ওড়নার কাপড় দেওয়া আছে ৫ হাত।</span>
                                 </li>
                             </ul>
                         </div>
@@ -1312,42 +1336,55 @@
                                         aria-label="1 of 6">
                                         <figure class="swiper-slide-inner"><img decoding="async"
                                                 class="swiper-slide-image"
-                                                src="https://baharicolor.online/wp-content/uploads/2024/04/1.webp"
+                                                src="<?php echo e(asset('landingpage/sharee/image/1.jpg')); ?>"
                                                 alt="1.webp" /></figure>
                                     </div>
                                     <div class="swiper-slide" role="group" aria-roledescription="slide"
                                         aria-label="2 of 6">
                                         <figure class="swiper-slide-inner"><img decoding="async"
                                                 class="swiper-slide-image"
-                                                src="https://baharicolor.online/wp-content/uploads/2024/04/6.webp"
-                                                alt="6.webp" /></figure>
+                                                src="<?php echo e(asset('landingpage/sharee/image/3.jpg')); ?>" /></figure>
                                     </div>
                                     <div class="swiper-slide" role="group" aria-roledescription="slide"
                                         aria-label="3 of 6">
                                         <figure class="swiper-slide-inner"><img decoding="async"
                                                 class="swiper-slide-image"
-                                                src="https://baharicolor.online/wp-content/uploads/2024/04/5.webp"
+                                                src="<?php echo e(asset('landingpage/sharee/image/33.jpg')); ?>"
                                                 alt="5.webp" /></figure>
                                     </div>
                                     <div class="swiper-slide" role="group" aria-roledescription="slide"
                                         aria-label="4 of 6">
                                         <figure class="swiper-slide-inner"><img decoding="async"
                                                 class="swiper-slide-image"
-                                                src="https://baharicolor.online/wp-content/uploads/2024/04/4.webp"
+                                                src="<?php echo e(asset('landingpage/sharee/image/4.jpg')); ?>"
                                                 alt="4.webp" /></figure>
                                     </div>
                                     <div class="swiper-slide" role="group" aria-roledescription="slide"
                                         aria-label="5 of 6">
                                         <figure class="swiper-slide-inner"><img decoding="async"
                                                 class="swiper-slide-image"
-                                                src="https://baharicolor.online/wp-content/uploads/2024/04/3.webp"
+                                                src="<?php echo e(asset('landingpage/sharee/image/44.jpg')); ?>"
                                                 alt="3.webp" /></figure>
                                     </div>
                                     <div class="swiper-slide" role="group" aria-roledescription="slide"
                                         aria-label="6 of 6">
                                         <figure class="swiper-slide-inner"><img decoding="async"
                                                 class="swiper-slide-image"
-                                                src="https://baharicolor.online/wp-content/uploads/2024/04/2.webp"
+                                                src="<?php echo e(asset('landingpage/sharee/image/2.jpg')); ?>"
+                                                alt="2.webp" /></figure>
+                                    </div>
+                                    <div class="swiper-slide" role="group" aria-roledescription="slide"
+                                        aria-label="6 of 6">
+                                        <figure class="swiper-slide-inner"><img decoding="async"
+                                                class="swiper-slide-image"
+                                                src="<?php echo e(asset('landingpage/sharee/image/11.jpg')); ?>"
+                                                alt="2.webp" /></figure>
+                                    </div>
+                                    <div class="swiper-slide" role="group" aria-roledescription="slide"
+                                        aria-label="6 of 6">
+                                        <figure class="swiper-slide-inner"><img decoding="async"
+                                                class="swiper-slide-image"
+                                                src="<?php echo e(asset('landingpage/sharee/image/22.jpg')); ?>"
                                                 alt="2.webp" /></figure>
                                     </div>
                                 </div>
@@ -1382,16 +1419,13 @@
                     <div class="elementor-element elementor-element-2eb5ba3 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading"
                         data-id="2eb5ba3" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">-------সাবধান
-                                ------</h2>
+                            <h2 class="elementor-heading-title elementor-size-default">-------বিঃদ্রঃ------</h2>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-7b4be82 elementor-widget elementor-widget-text-editor"
                         data-id="7b4be82" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
-                            <p>সাবধান বাজারে অন্য জায়গা থেকে কম দামে নকল সিল্ক শাড়ী নিয়ে প্রতারিত হবেন না।অরিজিনাল সিল্ক
-                                জামদানী শাড়ী  এরচেয়ে কমে দেয়া পসিবল না।তাই যদি কেউ অন্য জায়গায় কম দেখে এখানেও কমে নিতে
-                                চান,তিনি আমাদের থেকে দয়া করে অর্ডার করবেননা।কারণ আমরা নকল পন্য দিতে পারবোনা।</p>
+                            <p>বাজারে সবার চেয়ে কম প্রাইজে অর্ডার করতে চাইলে এখনি অর্ডার করুন কারন * আমরা নিজস্ব কারখানায় ২০১২ সাল থেকে ইসলামপুরে পোশাক তৈরি করে আসছি।* আমাদের সকল কাপড় প্রস্তুত করি।জামা ও ওড়নার কাপড় সম্পুর্ন সুতি।</p>
                         </div>
                     </div>
                 </div>
@@ -1402,8 +1436,8 @@
                 <div class="elementor-element elementor-element-561989e elementor-widget elementor-widget-heading"
                     data-id="561989e" data-element_type="widget" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
-                        <h2 class="elementor-heading-title elementor-size-default">প্রিয় মানুষকে মনের মতো সাজিয়ে নিন
-                            এই সুন্দর শাড়িটি গিফট দিয়ে।
+                        <h2 class="elementor-heading-title elementor-size-default">
+                            প্রিয় মানুষকে মনের মতো সাজিয়ে নিন এই সুন্দর ড্রেস টি গিফট দিয়ে।
                         </h2>
                     </div>
                 </div>
@@ -1473,15 +1507,15 @@
                                                     <!-- Product Row 1 -->
                                                     <div class="wcf-item">
                                                         <div class="wcf-item-selector wcf-item-single-sel">
-                                                            <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="Modina Dying >টু পিস জামা+ওড়না ১ সেট>৬০ বডি" data-quantity="1" data-price="950" data-image="" checked="checked">
+                                                            <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="প্রিমিয়াম - টু পিচ সেট জামা + ওড়না" data-quantity="1" data-price="950" data-image="" checked="checked">
                                                         </div>
                                                         <div class="wcf-item-image" style="">
                                                             <img fetchpriority="high" decoding="async" width="300" height="300" src="<?php echo e(asset('landingpage/images/product/1.jpg')); ?>" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />
                                                         </div>
                                                         <div class="wcf-item-all-text">
                                                             <div class="wcf-item-wrap">
-                                                                <span class="wcf-display-title">প্রিমিয়াম -সিল্ক
-                                                                    শাড়ী</span><span
+                                                                <span class="wcf-display-title">প্রিমিয়াম - টু পিচ সেট জামা + ওড়না
+                                                                </span><span
                                                                     class="wcf-display-title-quantity"><span
                                                                         class="dashicons dashicons-no-alt"></span><span
                                                                         class="wcf-display-quantity">1</span></span>
@@ -1616,7 +1650,7 @@ unset($__errorArgs, $__bag); ?>
                                                                                     data-id="138"
                                                                                     data-item-key="013d407166ec4fa56eb1e1f8cbe183b9"></a>
                                                                             </div>
-                                                                            <div class="wcf-product-name">Modina Dying >টু পিস জামা+ওড়না ১ সেট>৬০ বডি x 1</div>
+                                                                            <div class="wcf-product-name">প্রিমিয়াম - টু পিচ সেট জামা + ওড়না x 1</div>
                                                                         </div>
                                                                         <strong class="product-quantity"></strong>
                                                                     </td>
