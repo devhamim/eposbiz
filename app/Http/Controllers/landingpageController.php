@@ -15,6 +15,68 @@ class landingpageController extends Controller
 {
 
 
+    //sharee
+    function sharee(){
+        return view('landingpage.index');
+    }
+    // landing_order_store
+    function sharee_order_store(Request $request){
+            $request->validate([
+                'name' => 'required',
+                'mobile' => 'required|min:11|max:11',
+                'address' => 'required',
+            ]);
+
+            $lastOrder = Order::orderBy('id', 'desc')->first();
+                if ($lastOrder) {
+                    $lastOrderId = $lastOrder->order_id;
+                    $lastOrderNumber = intval(substr($lastOrderId, 4));
+                } else {
+                    $lastOrderNumber = 0;
+                }
+                $newOrderNumber = $lastOrderNumber + 1;
+
+                $order_id = 'NIT-' . str_pad($newOrderNumber, 8, '0', STR_PAD_LEFT);
+
+                if($request->shipping_cost == 60){
+                    $district = 'Dhaka';
+                }
+                if($request->shipping_cost == 120){
+                    $district = 'Outside Dhaka';
+                }
+                Billingdetails::insert([
+                    'order_id' => $order_id,
+                    'name' => $request->name,
+                    'mobile' => $request->mobile,
+                    'address' => $request->address,
+                    'district' => $district,
+                    'note' => $request->note,
+                    'created_at' => Carbon::now(),
+                ]);
+                if($request->radio_btn == 1){
+                    $price = 950;
+                    $product_name = 'Modina Dying >টু পিস জামা+ওড়না ১ সেট>৬০ বডি';
+                }
+                $subtotal = $price*$request->quantity;
+                Order::insert([
+                    'order_id' => $order_id,
+                    'sub_total' => $subtotal,
+                    'delivery_charge' => $request->shipping_cost,
+                    'total' => $subtotal + $request->shipping_cost,
+                    'color' => $request->color,
+                    'landing' => 1,
+                    'created_at' => Carbon::now(),
+                ]);
+                OrderProduct::create([
+                    'order_id' => $order_id,
+                    'product_id' => $product_name,
+                    'quantity' => $request->quantity,
+                    'price' => $price,
+                    'created_at' => Carbon::now(),
+                ]);
+                return back()->with("success","Order has been placed successfully");
+    }
+
     //cloth
     function landing_page(){
         return view('landingpage.secondpage');

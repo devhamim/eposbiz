@@ -67,6 +67,8 @@ Route::get('/privacy/policy', [FrontendController::class, 'privacy_policy'])->na
 Route::get('/terms/condition', [FrontendController::class, 'terms_condition'])->name('terms.condition');
 
 // landing page
+Route::get('/sharee', [landingpageController::class, 'sharee'])->name('sharee');
+Route::post('/sharee/order/store', [landingpageController::class, 'sharee_order_store'])->name('sharee.order.store');
 Route::get('/landing/page', [landingpageController::class, 'landing_page'])->name('landing.page');
 Route::post('/landing/order/store', [landingpageController::class, 'landing_order_store'])->name('landing.order.store');
 

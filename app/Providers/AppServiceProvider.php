@@ -111,5 +111,15 @@ class AppServiceProvider extends ServiceProvider
             $view->with('markatingsetting', markatingsetting::all());
         });
 
+        // sharee landing page
+        View::composer('landingpage.index', function ($view){
+            $view->with('setting', Setting::all());
+        });
+
+        // sharee landing page
+        View::composer('landingpage.index', function ($view){
+            $view->with('markatingsetting', markatingsetting::all());
+        });
+
     }
 }
