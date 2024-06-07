@@ -71,6 +71,9 @@ Route::get('/sharee', [landingpageController::class, 'sharee'])->name('sharee');
 Route::post('/sharee/order/store', [landingpageController::class, 'sharee_order_store'])->name('sharee.order.store');
 Route::get('/landing/page', [landingpageController::class, 'landing_page'])->name('landing.page');
 Route::post('/landing/order/store', [landingpageController::class, 'landing_order_store'])->name('landing.order.store');
+// landing three page
+Route::get('/putul/dress', [landingpageController::class, 'putul_dress'])->name('putul.dress');
+Route::post('/putul/order/store', [landingpageController::class, 'putul_order_store'])->name('putul.order.store');
 
 
 // visitor counter
