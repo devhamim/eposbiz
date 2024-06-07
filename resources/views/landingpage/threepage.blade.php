@@ -1605,10 +1605,8 @@
                                                             </label>
                                                             <span class="woocommerce-input-wrapper">
                                                                 <select name="color" id="color" class="input-text" required>
-                                                                    <option value="লাল">লাল</option>
-                                                                    <option value="কালো">কালো</option>
-                                                                    <option value="অ্যাশ">অ্যাশ</option>
-                                                                    <option value="টিয়া">টিয়া</option>
+                                                                    <option value="সাদা">সাদা</option>
+                                                                    <option value="আকাশী">আকাশী</option>
                                                                 </select>
                                                             </span>
                                                         </p>
