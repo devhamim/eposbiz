@@ -884,7 +884,7 @@
                             }
                         </style>
                         <h2 class="elementor-heading-title elementor-size-default">
-                            প্রিয় মানুষকে মনের মতো সাজিয়ে নিন এই সুন্দর ড্রেস টি গিফট দিয়ে।
+                            ”দেখতে অসম্ভব সুন্দর এই গ্রাউন+ওড়না  সেট খুবই প্রিমিয়াম ও আরামদায়ক।
                         </h2>
                     </div>
                 </div>
@@ -1213,7 +1213,7 @@
                                 }
                             </style>
                             <div class="elementor-wrapper elementor-open-inline">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/VZW2Y1gHJiw?si=pzk1cOYJC0Q4VPuG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/jljVgfuDj74?si=RPmeS624-foqQkPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -1227,7 +1227,8 @@
                     <div class="elementor-element elementor-element-449a027 elementor-widget elementor-widget-heading"
                         data-id="449a027" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">প্রিমিয়াম - টু পিচ সেট জামা + ওড়না
+                            <h2 class="elementor-heading-title elementor-size-default">পুতুল ড্রেস
+                                টু পিস >গ্রাউন+ওড়না ।
                             </h2>
                         </div>
                     </div>
@@ -1244,7 +1245,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">মদীনা প্রিন্ট করা কালার ১০০% গ্যারান্টি।</span>
+                                    <span class="elementor-icon-list-text">লং ৪৮" বডি ফ্রি সাইজ।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1254,7 +1255,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">লং ৪৭"+ ফেব্রিক্স ১০০%কটন।</span>
+                                    <span class="elementor-icon-list-text">কোমরে ফিতা আছে বড় ছোট করতে পারবেন।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1264,7 +1265,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">জামা+ওরনা টু পিস।</span>
+                                    <span class="elementor-icon-list-text">ফেব্রিক্স ইন্ডিয়ান চোষা কাপড়।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1284,7 +1285,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">বডি ৬০"পর্যন্ত বানাতে পারবেন।</span>
+                                    <span class="elementor-icon-list-text">ওড়নার কাপড় দেওয়া আছে ৫ হাত।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1294,7 +1295,27 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">ওড়নার কাপড় দেওয়া আছে ৫ হাত।</span>
+                                    <span class="elementor-icon-list-text">ডেলিভারি ম্যানের সামনে দেখে নিয়ে পারবেন।</span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                            </path>
+                                        </svg> </span>
+                                    <span class="elementor-icon-list-text">কোন অগ্রিম পেমেন্ট করতে হবে না।</span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                            </path>
+                                        </svg> </span>
+                                    <span class="elementor-icon-list-text">দুই সেট নিলে ডেলিভারি চার্জ।</span>
                                 </li>
                             </ul>
                         </div>
@@ -1435,7 +1456,7 @@
                     data-id="561989e" data-element_type="widget" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default">
-                            প্রিয় মানুষকে মনের মতো সাজিয়ে নিন এই সুন্দর ড্রেস টি গিফট দিয়ে।
+                            ”দেখতে অসম্ভব সুন্দর এই গ্রাউন+ওড়না  সেট খুবই প্রিমিয়াম ও আরামদায়ক।
                         </h2>
                     </div>
                 </div>
@@ -1484,7 +1505,7 @@
                                 <!-- CHECKOUT SHORTCODE -->
                                 <div class="woocommerce">
                                     <div class="woocommerce-notices-wrapper"></div>
-                                    <form action="{{ route('landing.order.store') }}" method="POST">
+                                    <form action="{{ route('putul.order.store') }}" method="POST">
                                         @csrf
                                         <div class="wcf-product-option-wrap wcf-yp-skin-classic wcf-product-option-before-customer">
                                             <h3 id="your_products_heading"> নিচে আপনার প্রোডাক্টটি নিবার্চন করুন </h3>
@@ -1505,14 +1526,14 @@
                                                     <!-- Product Row 1 -->
                                                     <div class="wcf-item">
                                                         <div class="wcf-item-selector wcf-item-single-sel">
-                                                            <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="প্রিমিয়াম - টু পিচ সেট জামা + ওড়না" data-quantity="1" data-price="950" data-image="" checked="checked">
+                                                            <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="প্রিমিয়াম - টু পিচ সেট গ্রাউন+ওড়না" data-quantity="1" data-price="1350" data-image="" checked="checked">
                                                         </div>
                                                         <div class="wcf-item-image" style="">
                                                             <img fetchpriority="high" decoding="async" width="300" height="300" src="{{ asset('landingpage/sharee/image/3-7.jpg') }}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />
                                                         </div>
                                                         <div class="wcf-item-all-text">
                                                             <div class="wcf-item-wrap">
-                                                                <span class="wcf-display-title">প্রিমিয়াম - টু পিচ সেট জামা + ওড়না
+                                                                <span class="wcf-display-title">প্রিমিয়াম - টু পিচ সেট গ্রাউন+ওড়না
                                                                 </span><span
                                                                     class="wcf-display-title-quantity"><span
                                                                         class="dashicons dashicons-no-alt"></span><span
@@ -1620,12 +1641,12 @@
                                                                                     data-id="138"
                                                                                     data-item-key="013d407166ec4fa56eb1e1f8cbe183b9"></a>
                                                                             </div>
-                                                                            <div class="wcf-product-name">প্রিমিয়াম - টু পিচ সেট জামা + ওড়না x 1</div>
+                                                                            <div class="wcf-product-name">প্রিমিয়াম - টু পিচ সেট গ্রাউন+ওড়না x 1</div>
                                                                         </div>
                                                                         <strong class="product-quantity"></strong>
                                                                     </td>
                                                                     <td class="product-total">
-                                                                        <span class="woocommerce-Price-amount amount"><bdi >950
+                                                                        <span class="woocommerce-Price-amount amount"><bdi >1350
                                                                             <span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi>
                                                                         </span>
                                                                     </td>
@@ -1636,8 +1657,8 @@
                                                                 <tr class="cart-subtotal">
                                                                     <th>Subtotal</th>
                                                                     <td>
-                                                                        <input type="hidden" name="sub_total" value="950" id="sub_total_input">
-                                                                        <span class="woocommerce-Price-amount amount"><bdi id="subtotal_footer">950<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
+                                                                        <input type="hidden" name="sub_total" value="1350" id="sub_total_input">
+                                                                        <span class="woocommerce-Price-amount amount"><bdi id="subtotal_footer">1350<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
                                                                     </td>
                                                                 </tr>
                                                                 <!-- Shipping Options -->
@@ -1664,8 +1685,8 @@
                                                                 <tr class="order-total">
                                                                     <th>Total</th>
                                                                     <td>
-                                                                        <input type="hidden" name="total" value="950" id="total_input">
-                                                                        <strong><span class="woocommerce-Price-amount amount"><bdi id="total">950<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
+                                                                        <input type="hidden" name="total" value="1350" id="total_input">
+                                                                        <strong><span class="woocommerce-Price-amount amount"><bdi id="total">1350<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
                                                                     </td>
                                                                 </tr>
                                                                 <!-- End Order Total -->
@@ -1817,7 +1838,7 @@
         const subtotalElement = document.getElementById('subtotal');
         const subtotalFooterElement = document.getElementById('subtotal_footer');
         const totalElement = document.getElementById('total');
-        const productPrice = 950;
+        const productPrice = 1350;
         let shippingCost = 60;
 
         function updateSubtotalAndTotal() {

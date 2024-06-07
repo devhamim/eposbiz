@@ -193,8 +193,8 @@ class landingpageController extends Controller
                     'created_at' => Carbon::now(),
                 ]);
                 if($request->radio_btn == 1){
-                    $price = 950;
-                    $product_name = 'প্রিমিয়াম - টু পিচ সেট জামা + ওড়না';
+                    $price = 1350;
+                    $product_name = 'পুতুল ড্রেস টু পিস >গ্রাউন+ওড়না।';
                 }
                 $subtotal = $price*$request->quantity;
                 Order::insert([
