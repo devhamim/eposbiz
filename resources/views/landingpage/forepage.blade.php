@@ -507,7 +507,7 @@
                                     <div class="col-lg-6">
                                         <!-- Product Row 2 -->
                                         <div class="product_box">
-                                            <input type="radio" name="radio_btn" id="product_2" value="2" data-product-name="বেড বাগ কিলার ৫০০ মিলি" data-quantity="2" data-price="590" data-image="{{ asset('landingpage/images/product/i-2.jpg') }}">
+                                            <input type="radio" name="radio_btn" id="product_2" value="2" data-product-name="বেড বাগ কিলার ৫০০ মিলি" data-quantity="1" data-price="590" data-image="{{ asset('landingpage/images/product/i-2.jpg') }}">
                                             <img src="{{ asset('landingpage/images/product/i-2.jpg') }}" alt="" width="80" height="80">
                                             <div class="box-content">
                                                 <label for="product_2">বেড বাগ কিলার ৫০০ মিলি</label>

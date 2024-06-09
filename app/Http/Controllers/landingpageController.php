@@ -256,12 +256,14 @@ class landingpageController extends Controller
                 if($request->radio_btn == 1){
                     $price = 350;
                     $product_name = 'বেড বাগ কিলার ২৫০ মিলি';
+                    $quantity = 1;
                 }
                 if($request->radio_btn == 1){
                     $price = 590;
                     $product_name = 'বেড বাগ কিলার ৫০০ মিলি';
+                    $quantity = 1;
                 }
-                $subtotal = $price*$request->quantity;
+                $subtotal = $price*$quantity;
                 Order::insert([
                     'order_id' => $order_id,
                     'sub_total' => $subtotal,
@@ -274,7 +276,7 @@ class landingpageController extends Controller
                 OrderProduct::create([
                     'order_id' => $order_id,
                     'product_id' => $product_name,
-                    'quantity' => $request->quantity,
+                    'quantity' => $quantity,
                     'price' => $price,
                     'created_at' => Carbon::now(),
                 ]);

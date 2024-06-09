@@ -371,7 +371,7 @@
             </div>
             <div class="grid gap-4">
                 <div id="order" class="col-span-12">
-                    <form action="<?php echo e(route('sharee.order.store')); ?>" method="POST">
+                    <form action="<?php echo e(route('insect.order.store')); ?>" method="POST">
                         <?php echo csrf_field(); ?>
                         <div class="row">
                             <div class="col-md-12">
@@ -392,7 +392,7 @@
                                     <div class="col-lg-6">
                                         <!-- Product Row 2 -->
                                         <div class="product_box">
-                                            <input type="radio" name="radio_btn" id="product_2" value="2" data-product-name="বেড বাগ কিলার ৫০০ মিলি" data-quantity="2" data-price="590" data-image="<?php echo e(asset('landingpage/images/product/i-2.jpg')); ?>">
+                                            <input type="radio" name="radio_btn" id="product_2" value="2" data-product-name="বেড বাগ কিলার ৫০০ মিলি" data-quantity="1" data-price="590" data-image="<?php echo e(asset('landingpage/images/product/i-2.jpg')); ?>">
                                             <img src="<?php echo e(asset('landingpage/images/product/i-2.jpg')); ?>" alt="" width="80" height="80">
                                             <div class="box-content">
                                                 <label for="product_2">বেড বাগ কিলার ৫০০ মিলি</label>
@@ -439,7 +439,7 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>
                                     </div>
-                                    <div class="col-lg-6 my-3">
+                                    <div class="col-lg-12 my-3">
                                         <label class="form-label" for="">মোবাইল নাম্বার : <span
                                                 class="text-danger">*</span></label>
                                         <input type="tel" name="mobile" class="form-control"
@@ -472,10 +472,7 @@ endif;
 unset($__errorArgs, $__bag); ?>
                                     </div>
                                     
-                                    <div class="col-lg-6 my-3">
-                                        <label class="form-label" for="">কালার : </label>
-                                        <input type="text" name="color" class="form-control" placeholder="কালার লিখুন(লাল,কালো, অ্যাশ,টিয়া) *">
-                                    </div>
+                                    
                                     <div class="col-lg-12 my-3">
                                         <label class="form-label" for="">Order notes (optional)</label>
                                         <textarea name="note" class="form-control" placeholder="এখানে লিখুন..." id="" cols="30" rows="2"></textarea>
