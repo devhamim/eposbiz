@@ -215,4 +215,69 @@ class landingpageController extends Controller
                 ]);
                 return back()->with("success","Order has been placed successfully");
     }
+    //insect_control
+    function insect_control(){
+        return view('landingpage.forepage');
+    }
+    // insect_order_store
+    function insect_order_store(Request $request){
+            $request->validate([
+                'name' => 'required',
+                'mobile' => 'required|min:11|max:11',
+                'address' => 'required',
+            ]);
+
+            $lastOrder = Order::orderBy('id', 'desc')->first();
+                if ($lastOrder) {
+                    $lastOrderId = $lastOrder->order_id;
+                    $lastOrderNumber = intval(substr($lastOrderId, 4));
+                } else {
+                    $lastOrderNumber = 0;
+                }
+                $newOrderNumber = $lastOrderNumber + 1;
+
+                $order_id = 'NIT-' . str_pad($newOrderNumber, 8, '0', STR_PAD_LEFT);
+
+                if($request->shipping_cost == 60){
+                    $district = 'Dhaka';
+                }
+                if($request->shipping_cost == 100){
+                    $district = 'Outside Dhaka';
+                }
+                Billingdetails::insert([
+                    'order_id' => $order_id,
+                    'name' => $request->name,
+                    'mobile' => $request->mobile,
+                    'address' => $request->address,
+                    'district' => $district,
+                    'note' => $request->note,
+                    'created_at' => Carbon::now(),
+                ]);
+                if($request->radio_btn == 1){
+                    $price = 350;
+                    $product_name = 'বেড বাগ কিলার ২৫০ মিলি';
+                }
+                if($request->radio_btn == 1){
+                    $price = 590;
+                    $product_name = 'বেড বাগ কিলার ৫০০ মিলি';
+                }
+                $subtotal = $price*$request->quantity;
+                Order::insert([
+                    'order_id' => $order_id,
+                    'sub_total' => $subtotal,
+                    'delivery_charge' => $request->shipping_cost,
+                    'total' => $subtotal + $request->shipping_cost,
+                    'color' => $request->color,
+                    'landing' => 1,
+                    'created_at' => Carbon::now(),
+                ]);
+                OrderProduct::create([
+                    'order_id' => $order_id,
+                    'product_id' => $product_name,
+                    'quantity' => $request->quantity,
+                    'price' => $price,
+                    'created_at' => Carbon::now(),
+                ]);
+                return back()->with("success","Order has been placed successfully");
+    }
 }

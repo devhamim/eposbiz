@@ -411,8 +411,7 @@
         media='all' />
     <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/6zsossqs/5ukdx.css"
         media="all" />
-    <link rel='stylesheet' id='elementor-post-2325-css'
-        href='{{ asset('landingpage/sharee') }}/wp-content/uploads/elementor/css/post-23252ee6.css?ver=1715511391' type='text/css'
+    <link rel='stylesheet' id='elementor-post-2325-css' href='{{ asset('landingpage/sharee') }}/wp-content/uploads/elementor/css/post-23252ee6.css?ver=1715511391' type='text/css'
         media='all' />
     <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/qa9ezqp0/5ukdx.css"
         media="all" />
@@ -1699,14 +1698,11 @@
                                                                 value="অর্ডার করুন">অর্ডার করুন</button>
                                                         </div>
                                                     </div>
-
                                                 </div>
-
                                             </div>
                                         </div>
                                     </form>
                                 </div>
-
                                 <!-- END CHECKOUT SHORTCODE -->
                             </div>
                         </div>
