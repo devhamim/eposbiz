@@ -486,7 +486,7 @@
             </div>
             <div class="grid gap-4">
                 <div id="order" class="col-span-12">
-                    <form action="{{ route('sharee.order.store') }}" method="POST">
+                    <form action="{{ route('insect.order.store') }}" method="POST">
                         @csrf
                         <div class="row">
                             <div class="col-md-12">
