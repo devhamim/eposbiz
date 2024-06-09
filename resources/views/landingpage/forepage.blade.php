@@ -540,7 +540,7 @@
                                             <strong class="text-danger">{{ $message }}</strong>
                                         @enderror
                                     </div>
-                                    <div class="col-lg-6 my-3">
+                                    <div class="col-lg-12 my-3">
                                         <label class="form-label" for="">মোবাইল নাম্বার : <span
                                                 class="text-danger">*</span></label>
                                         <input type="tel" name="mobile" class="form-control"
