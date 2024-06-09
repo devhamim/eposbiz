@@ -258,7 +258,7 @@ class landingpageController extends Controller
                     $product_name = 'বেড বাগ কিলার ২৫০ মিলি';
                     $quantity = 1;
                 }
-                if($request->radio_btn == 1){
+                if($request->radio_btn == 2){
                     $price = 590;
                     $product_name = 'বেড বাগ কিলার ৫০০ মিলি';
                     $quantity = 1;
