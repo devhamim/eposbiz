@@ -562,10 +562,10 @@
                                         <label class="form-label" for="">সাইজ : </label>
                                         <input type="text" name="size" class="form-control" placeholder="সাইজ লিখুন ( যেমন ৩২,৩৪ ইত্যাদি) *">
                                     </div> --}}
-                                    <div class="col-lg-6 my-3">
+                                    {{-- <div class="col-lg-6 my-3">
                                         <label class="form-label" for="">কালার : </label>
                                         <input type="text" name="color" class="form-control" placeholder="কালার লিখুন(লাল,কালো, অ্যাশ,টিয়া) *">
-                                    </div>
+                                    </div> --}}
                                     <div class="col-lg-12 my-3">
                                         <label class="form-label" for="">Order notes (optional)</label>
                                         <textarea name="note" class="form-control" placeholder="এখানে লিখুন..." id="" cols="30" rows="2"></textarea>

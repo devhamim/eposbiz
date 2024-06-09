@@ -20,6 +20,9 @@ return new class extends Migration
             $table->integer('paid')->default(0);
             $table->integer('due')->default(0);
             $table->string('total');
+            $table->string('color')->nullable();
+            $table->string('size')->nullable();
+            $table->string('landing')->default(0);
             $table->integer('status')->default(0);
             $table->timestamps();
         });
